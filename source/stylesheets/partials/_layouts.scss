@@ -56,6 +56,10 @@ a {
 	color: $pink;
 }
 
+.fa{
+	text-decoration: none;
+}
+
 .yellow{color: $yellow;}
 .red{color: $red;}
 .purple{color: $purple;}
@@ -370,6 +374,29 @@ background: url(../images/pink-line.jpg);
 
 body.speakers #main-content{
 	background: $blue;
+}
+
+.speaker-box{
+	margin: 20px;
+	background: $lightBlue;
+	a{
+	 	color: $white;
+	 	display: block;
+	 float: left;
+	 	.fa{
+		 	color: $darkBlue;
+		 	font-size: 22px;
+		 	padding: 5px 5px 0 5px;
+	 	}
+	}
+	.article-header{
+		width: 100%;
+		overflow: hidden;
+		margin-bottom: 10px;
+		.speaker-title a{
+			margin-right: 10px;
+		}
+	}
 }
 
 body.speakers nav#main a:after{color: $blue;}

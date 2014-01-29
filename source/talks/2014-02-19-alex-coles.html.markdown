@@ -4,11 +4,11 @@ title: Alex Coles
 tags: talk
 twitter: alex
 github: alex-coles
-linkedin:
+linkedin: alex-coles
 workshops:
 talks: Front End Choices
-video:
-image:
+video: alex-coles
+image: alex-coles-img
 description: This talk exists primarily as a "State 
 ---
 
