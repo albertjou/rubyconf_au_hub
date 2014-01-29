@@ -1,7 +1,7 @@
 ---
 type: talk
 title: Modern Concurrency Practices in Ruby
-date: 2012-02-20
+date: 2014-02-20
 day: thurs
 time: 2:40pm to 3:20pm
 tags: talk

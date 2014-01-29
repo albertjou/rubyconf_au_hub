@@ -1,7 +1,7 @@
 ---
 type: speaker
 title: Amy Hoy
-date: 2012/02/19
+date: 2014-02-19
 tags: workshop
 twitter: amyhoy
 github:

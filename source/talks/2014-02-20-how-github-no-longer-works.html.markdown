@@ -1,6 +1,6 @@
 ---
 type: talk
-date: 2012-02-20
+date: 2014-02-20
 day: thurs
 title: How Github (no longer) works
 time: 11:00am to 11:45am

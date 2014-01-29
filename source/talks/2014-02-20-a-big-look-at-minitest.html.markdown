@@ -1,7 +1,7 @@
 ---
 type: talk
 title: A Big Look at MiniTest
-date: 2012-02-20
+date: 2014-02-20
 day: thurs
 time: 10:15am to 11:00am
 tags: example, talk

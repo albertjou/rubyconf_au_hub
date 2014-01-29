@@ -1,7 +1,7 @@
 ---
 type: talk
 title: Extreme Makeover- Rubygems Edition
-date: 2012-02-20
+date: 2014-02-20
 day: thurs
 time: 10:15am to 11:00am
 tags: talk

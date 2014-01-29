@@ -1,7 +1,7 @@
 ---
 type: talk
 title: Using Ruby to Automate Your Life
-date: 2012-02-20
+date: 2014-02-20
 day: thurs
 time: 11:00am to 11:45am
 tags: talk

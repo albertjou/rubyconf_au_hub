@@ -1,7 +1,7 @@
 ---
 type: talk
 title: MRI Magic Tricks
-date: 2012-02-20
+date: 2014-02-20
 day: thurs
 time: 11:45am to 12:30am
 tags: talk

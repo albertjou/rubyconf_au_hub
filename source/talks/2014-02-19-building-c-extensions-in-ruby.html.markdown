@@ -1,7 +1,7 @@
 ---
 type: workshop
 title: Building C Extensions in Ruby
-date: 2012/02/19
+date: 2014-02-19
 day: wed
 time: 9:00am to 10:00am
 tags: workshop

@@ -1,7 +1,7 @@
 ---
 type: talk
 title: Front End Choices
-date: 2012-02-20
+date: 2014-02-20
 day: thurs
 time: 2:00pm to 2:40pm
 tags: talk
