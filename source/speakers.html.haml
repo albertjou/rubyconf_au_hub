@@ -1,0 +1,30 @@
+---
+title: speakers
+---
+
+%h2 
+	Wednesday 19th February @ Vibe Hotel North Sydney
+- page_articles.select {|article| article.data[:type] == 'speaker' }.each do |article|
+	.article-wrapper
+		.article-content.col-sm-10
+			%h3 
+				= link_to article.title, article 
+				
+			- if article.data[:twitter] != nil
+				%span
+					%a{:href => "http://twitter.com/#{article.data[:twitter]}"}
+						%img{:src => 'images/twitter.png'}
+			- if article.data[:linkedin] != nil
+				%span
+					%a{:href => "http://linkedin.com/#{article.data[:linkedin]}"}
+						%img{:src => 'images/linkedin.png'}
+			- if article.data[:github] != nil
+				%span
+					%a{:href => "http://github.com/#{article.data[:github]}"}
+						%img{:src => 'images/github.png'}
+			%p
+				= article.data[:description]
+			
+			- if article.data[:talks] != nil
+				%p
+					= article.data[:talks]

@@ -1,0 +1,64 @@
+---
+title: scheduler
+---
+
+%nav#conf-days
+	%ul
+		%li.active{:'data-slide-id' => 'wed'} Wed 19 Feb - WORKSHOPS
+		%li{:'data-slide-id' => 'thurs'} Thurs 20 Feb - CONFERENCE
+		%li{:'data-slide-id' => 'fri'} Fri 21 Feb - CONFERENCE
+			
+#day-one.slide-frame.wed.active
+	%h2 Wednesday 19th February @ Vibe Hotel North Sydney
+
+	- page_articles.select{|article| article.data[:day] == 'wed' }.each do |article|
+		.article-wrapper
+			.article-content.col-sm-10
+				%p.time 
+					=article.data[:time]
+				%h3 
+					= link_to article.title, article 
+				%p.by-line 
+					by 
+					%a{:href => '/Mark-Bates'}
+						=article.data[:speaker]
+			.check-area.col-sm-2
+				%p
+
+#day-two.slide-frame.thurs
+	%h2 Thursday 20th February @ Luna Park Crystal Palace
+	
+	- page_articles.select{|article| article.data[:day] == 'thurs' && article.data[:type] == 'talk' }.each do |article|
+		.article-frame.col-md-5
+			.article-wrapper.time-line.col-md-12
+				%i.fa
+				.article-content.col-md-9
+					%p.time
+						=article.data[:time]
+					%h3 
+						= link_to article.title, article 
+					%p.by-line 
+						by 
+						%a{:href => '/Mark-Bates'}  
+							=article.data[:speaker]
+				.check-area.col-md-3
+					%p
+		
+#day-three.slide-frame.fri
+	%h2 Friday 21th February @ Luna Park Crystal Palace
+
+	- page_articles.select {|article| article.data[:day] == 'fri' && article.data[:type] == 'talk'}.each do |article|
+		.article-wrapper.time-line.col-md-5
+			.article-content.col-sm-10
+				%p.time
+					=article.data[:time]
+				%h3 
+					= link_to article.title, article 
+				%p.by-line
+					by 
+					%a{:href => '/Mark-Bates'}  
+						=article.data[:speaker]
+			.check-area.col-sm-2
+				%p
+
+

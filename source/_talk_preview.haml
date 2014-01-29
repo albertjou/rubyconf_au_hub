@@ -1,0 +1,8 @@
+.pre-talk-summary
+  .media
+    //= image_tag talk_preview.image, :class => "pull-left media-object", :alt => "Preview Image"
+    .media-body
+      .media-heading
+        %h2 = talk_preview.title
+      //= talk_preview.render(:layout => false)
+      .link-out

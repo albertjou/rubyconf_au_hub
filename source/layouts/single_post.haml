@@ -1,0 +1,26 @@
+<!doctype html>
+%html
+  %head
+  %meta{:charset => "utf-8"}
+%title 
+  = current_page.data.title || "Rubyconf Australia"
+= stylesheet_link_tag "normalize", "application" 
+= javascript_include_tag  "all" 
+= partial 'header'
+%body{:class => page_classes}
+.col-md-12#container
+  %article
+    %h1
+      = current_article.title
+    = current_article.body
+
+  - if current_article.data[:type] == 'speaker'
+    - page_articles.select {|article| article.data[:speaker] == 'John Doe' }.each_with_index do |article|
+      %h2 
+      = link_to article.title, article 
+      %span 
+      = article.date.strftime('%b %e')
+
+      = article.body
+
+  
