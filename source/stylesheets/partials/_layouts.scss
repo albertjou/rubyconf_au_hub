@@ -311,9 +311,13 @@ li:nth-child(even):after{
 
 .slide-frame{
 	display: none;
-	background: url(../images/pink-line.jpg);
+	/*
+background: url(../images/pink-line.jpg);
 	background-repeat: repeat-y;
 	background-position: center center;
+*/
+	margin: 0 auto;
+	float: none;
 	&.active{
 		display: block;
 	}
@@ -410,13 +414,13 @@ footer {
 	background-position: center bottom;
 	background-size: cover;
 	margin-bottom: 0;
-	padding-top: 40px;
+	padding-top: 80px;
 	color: $white;
 	font-size: 34px;
 	font-family: $omnes-reg;
+	text-align: center;
 	.ninefold-footer{
-		text-align: left;
-		padding: 0 !important;
+		padding: 0 0 10px 0;
 	}
 }
 
