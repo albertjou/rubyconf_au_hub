@@ -15,15 +15,15 @@ title: speakers
 						
 					- if article.data[:twitter] != nil
 						%span
-							%a.fa{:href => "http://twitter.com/#{article.data[:twitter]}"}
+							%a.fa{:href => article.data[:twitter], :target => '_blank'}
 								%i.fa.fa-twitter
 					- if article.data[:linkedin] != nil
 						%span
-							%a.fa{:href => "http://linkedin.com/#{article.data[:linkedin]}"}
+							%a.fa{:href => article.data[:linkedin], :target => '_blank'}
 								%i.fa.fa-linkedin
 					- if article.data[:github] != nil
 						%span
-							%a.fa{:href => "http://github.com/#{article.data[:github]}"}
+							%a.fa{:href => article.data[:github], :target => '_blank'}
 								%i.fa.fa-github
 				.col-sm-12
 					%p.speaker-description
@@ -37,21 +37,17 @@ title: speakers
 		
 			.col-sm-12
 				
-				- if article.data[:talks] != nil
+				- $current_title = article.title
+				- page_articles.select {|article| article.data[:type] == 'talk' && article.data[:speaker] == $current_title }.each do |article|
 					%a{:href => '#'}
 						%i.fa.fa-comments
-						- $current_title = article.title
-						- page_articles.select {|article| article.data[:type] == 'talk' && article.data[:speaker] == $current_title }.each do |article|
-							= article.title
-				
-								
-				- if article.data[:workshops] != nil	
+						= article.title
+			.col-sm-12
+				- page_articles.select {|article| article.data[:type] == 'workshop' && article.data[:speaker] == $current_title }.each do |article|
 					%a{:href => '#'}
 						%i.fa.fa-wrench	
-						- page_articles.select {|article| article.data[:type] == 'workshop' && article.data[:speaker] == $current_title }.each do |article|
-							= article.title
-				
-									
+						= article.title
+		
 				- if article.data[:video] != nil
 					%span.video-link
 						%a{:href => '#'}

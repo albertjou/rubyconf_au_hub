@@ -9,7 +9,10 @@ workshops:
 talks: Modern Concurrency Practices in Ruby
 video: 
 image: arnab-deka.jpg
-description: Eight years of delivering quality software in diverse environments like LivingSocial, Amazon.com, AWS and Goldman Sachs. Extensive experience in Ruby and Ruby On Rails.
+description: 
+---
+
+Eight years of delivering quality software in diverse environments like LivingSocial, Amazon.com, AWS and Goldman Sachs. Extensive experience in Ruby and Ruby On Rails.
 
 See more at http://arnab.github.com/resume/.
 

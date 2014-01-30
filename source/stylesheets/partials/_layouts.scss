@@ -56,6 +56,23 @@ a {
 	color: $pink;
 }
 
+.btn{
+	display: inline-block;
+	background: $blue;
+	color: $white;
+	text-transform: uppercase;
+	line-height: 50px;
+	padding: 0 20px;
+	border-radius: 12px !important;
+	font-size: 18px;
+	font-weight: bold;
+	margin-top: 10px;
+	&:hover{
+		background: $lightBlue;
+		color: $white;
+	}
+}
+
 .fa{
 	text-decoration: none;
 }
@@ -145,6 +162,7 @@ nav#main{
 	margin: auto;
 	width: 100%;
 	background: $black;
+	padding-top: 20px;
 	ul{
 		width: 620px;
 	 	height: 50px;
@@ -246,36 +264,40 @@ body.scheduler footer{
 		}
 	}
 }
+
 .article-frame{
-	height: 240px;
+	height: 260px;
 	padding: 0;
 	margin: 0;
 	display: inline-block;
 	width: 45%;
-	
 	&:nth-child(odd){
 		float: left;
 	}
+	
 	&:nth-child(even){
 		float: right;
 	}
+	
 	@media (max-width: 1000px) {
 		width: 100%;
 		&:nth-child(odd){
 		float: none;
-	}
+		}
 	
-	&:nth-child(even){
-		float: none;
-	}
+		&:nth-child(even){
+			float: none;
+		}
 	}
 }
+
 .article-wrapper{
 	background-color: $white;
 	border-radius: 12px;
 	padding: 25px 0px;
 	margin: 20px 0;
 	overflow: hidden;
+	
 	.check-area{
 		width: 64px;
 		height: 64px;
@@ -289,71 +311,74 @@ body.scheduler footer{
 			background-position-y: -64px;
 		}
 	}
+	
 	.time{
 		margin: 0;
 		padding: 0;
 		font-size: 18px;
 		font-family: $omnes-bold;
 	}
+	
 	a{
 		text-decoration: underline;
 		&:hover{
 			color: $darkPink;
 		}
 	}
+	
 	.by-line{
 		font-size: 24px;
 	}
-li:nth-child(even):after{
-			content: '\f0d9';
-			color: black;
-			font-size: 55px;
-			position: absolute;
-			right: -17px;
-			top: 15px;
-}	
-	li:nth-child(odd):after{
-				content: '\f0da';
-				color: white;
-				font-size: 55px;
-				position: absolute;
-				right: -17px;
-				top: 15px;
-	}
-
-
 	
+	li:nth-child(even):after{
+		content: '\f0d9';
+		color: black;
+		font-size: 55px;
+		position: absolute;
+		right: -17px;
+		top: 15px;
+	}
+		
+	li:nth-child(odd):after{
+		content: '\f0da';
+		color: white;
+		font-size: 55px;
+		position: absolute;
+		right: -17px;
+		top: 15px;
+	}
 }
+
 .article-wrapper.active{
 	background-color: $lightestPink;
+	
 	.check-area{
 		background-position-y: -64px;
 	}
+	
 	a{
 		text-decoration: underline;
 		color: $white;
+		
 		&:hover{
 			color: $pink;
 		}
 	}
 }
+
 .article-wrapper.time-line{
 	overflow: visible;
 }
 
-
 .slide-frame{
 	display: none;
-	/*
-background: url(../images/pink-line.jpg);
-	background-repeat: repeat-y;
-	background-position: center center;
-*/
 	margin: 0 auto;
 	float: none;
+	
 	&.active{
 		display: block;
 	}
+	
 	.article-wrapper{
 		padding: 25px 20px;
 	}
@@ -361,27 +386,25 @@ background: url(../images/pink-line.jpg);
 
 
 #day-two, #day-three{
-	.article-frame{
 
+	.article-frame{
+	
 		&:nth-child(odd){
-		//margin-right: 55px;
-		float: left;
-		display: inline-block;
-	}
-	&:nth-child(even){
-		//margin-left: 55px;
-		float: right;
-		display: inline-block;
-	}
+			float: left;
+			display: inline-block;
+		}
+			
+		&:nth-child(even){
+			float: right;
+			display: inline-block;
+		}
 	}
 }
-
 
 #day-one, #day-two, #day-three{
 	overflow: hidden;
 	margin: 0 auto;
 }
-
 
 #main-content{
 	padding: 35px 30px;
@@ -406,45 +429,44 @@ background: url(../images/pink-line.jpg);
 body.speakers #main-content{
 	background: $blue;
 }
-
 body.speakers nav#main a:after{color: $blue;}
 
 .speaker-box{
 	margin: 20px;
 	background: $lightBlue;
-
+	
 	a{
 	 	color: $white;
 	 	display: block;
-	 float: left;
+	 	float: left;
+	 	
+	 	&:hover{
+		 	color: $darkBlue;
+	 	}
+	 	
 	 	.fa{
 		 	color: $darkBlue;
 		 	font-size: 22px;
 		 	padding: 5px 5px 0 5px;
+		 	
 		 	&:hover{
 			 	color: $white;
 		 	}
 	 	}
-	 	&:hover{
-		 	color: $darkBlue;
-	 	}
 	}
+	
 	.article-header{
 		overflow: hidden;
 		padding: 0 0 0 0;
 		margin-bottom: 10px;
+		
 		.speaker-title a{
 			margin-right: 10px;
+			
 			@media (max-width: 768px) {
 				text-align: center;
 			}
 		}
-	
-	}
-	
-	.icon-container{
-		width: 100%;
-		margin: 20px 0;
 	}
 	
 	.avatar-frame,.avatar-frame img{
@@ -476,21 +498,28 @@ body.speakers nav#main a:after{color: $blue;}
 	font-size: 16px;
 	color: $white;
 	text-decoration: underline;
-		
 }
 
-// Live Feed
+/* Live Feed
+********************************/
 body.live-feed #main-content{
 	background: $green;
 }
+
 body.live-feed nav#main a:after{color: $green;}
 
-// Single Article
+.live-title{
+	text-align: center;
+	color: $white;
+}
 
+/* Single Article
+*********************************/
 .talk-module{
 	background: $blue;
 	size: 30px;
 	padding: 45px 0;
+	
 	.title{
 		text-decoration: none;
 		color: $white;
@@ -506,18 +535,16 @@ body.live-feed nav#main a:after{color: $green;}
 
 .speaker-intro{
 	text-align: center;
-		.avatar-frame,.avatar-frame img{
-	width: 150px;
-	height: 150px;
-	-webkit-border-radius: 70px; /* Saf3+, Chrome */
-	border-radius: 70px; /* Opera 10.5, IE 9 */
-	/*-moz-border-radius: 50x;  Disabled for FF1+ */
-	padding-left: 0;
-	margin: 0 auto;
+	.avatar-frame,.avatar-frame img{
+		width: 150px;
+		height: 150px;
+		-webkit-border-radius: 70px; /* Saf3+, Chrome */
+		border-radius: 70px; /* Opera 10.5, IE 9 */
+		/*-moz-border-radius: 50x;  Disabled for FF1+ */
+		padding-left: 0;
+		margin: 0 auto;
+	}
 }
-
-}
-
 
 .speaker-talks{
 	margin: 45px auto;

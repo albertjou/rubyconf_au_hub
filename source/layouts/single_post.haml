@@ -22,36 +22,43 @@
 							%h1.speaker-title
 								= current_article.title
 						%h2.title About the speaker
-						= current_article.body
-						
-			- if current_article.data[:talks]
+						- if current_article.body == ""
+							= current_article.body
+						- else 
+							%p Speaker bio coming soon.		
+
+			- $current_speaker = current_article.data[:title]
+			- page_articles.select{|article| article.data[:speaker] == $current_speaker && article.data[:type] == 'talk'}.each do |article|
 				%section.speaker-talks
 					.col-md-12.container
-						- $current_speaker = current_article.data[:title]
-						- page_articles.select{|article| article.data[:speaker] == $current_speaker && article.data[:type] == 'talk'}.each do |article|
-							%li.fa.fa-comments
-							%h2.title
-								=article.title
-							=article.body
-						
-			- if current_article.data[:workshops]
+						%li.fa.fa-comments
+						%h2.title
+							=article.title
+						=article.body
+				
+			- page_articles.select{|article| article.data[:speaker] == $current_speaker && article.data[:type] == 'workshop'}.each do |article|
 				%section.speaker-workshops
 					.col-md-12.container
-						- page_articles.select{|article| article.data[:speaker] == $current_speaker && article.data[:type] == 'workshop'}.each do |article|
-							%li.fa.fa-wrench
-							%h2.title
-								=article.title
-							=article.body
-						
-			- if current_article.data[:video]
-				%section.speaker-video
-					.col-md-12.container
+						%li.fa.fa-wrench
+						%h2.title
+							=article.title
+						=article.body
+						%a.btn{:href => "http://www.eventbrite.com.au/e/rubyconf-australia-2014-tickets-8449999175", :target => '_blank'}
+							Buy workshop ticket
+			
+			%section.speaker-video
+				.col-md-12.container
+					- if current_article.data[:video]
 						.col-md-5
 							%iframe{:width => "560", :height => "315", :src => current_article.data[:video], :frameborder => "0"}
 						.col-md-7
 							%h3
 								Interview With
 								=current_article.title
+					- else
+						%h3 
+							Check back soon for the speakers video interview
+								
 	
 	= partial 'footer'
 	
