@@ -3,13 +3,12 @@ type: speaker
 title: Amy Hoy
 date: 2014-02-19
 tags: workshop
-twitter: amyhoy
-github:
+twitter: https://twitter.com/amyhoy
 linkedin:
 workshops:
-talks:
-video:
-image:
+talks: TBD
+video: /link-to-video
+image: amy-hoy.png
 description:
 ---
 

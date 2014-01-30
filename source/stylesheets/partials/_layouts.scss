@@ -251,11 +251,29 @@ body.scheduler footer{
 	padding: 0;
 	margin: 0;
 	display: inline-block;
+	width: 45%;
+	
+	&:nth-child(odd){
+		float: left;
+	}
+	&:nth-child(even){
+		float: right;
+	}
+	@media (max-width: 1000px) {
+		width: 100%;
+		&:nth-child(odd){
+		float: none;
+	}
+	
+	&:nth-child(even){
+		float: none;
+	}
+	}
 }
 .article-wrapper{
 	background-color: $white;
 	border-radius: 12px;
-	padding: 25px 20px;
+	padding: 25px 0px;
 	margin: 20px 0;
 	overflow: hidden;
 	.check-area{
@@ -336,7 +354,9 @@ background: url(../images/pink-line.jpg);
 	&.active{
 		display: block;
 	}
-	
+	.article-wrapper{
+		padding: 25px 20px;
+	}
 }
 
 
@@ -392,6 +412,7 @@ body.speakers nav#main a:after{color: $blue;}
 .speaker-box{
 	margin: 20px;
 	background: $lightBlue;
+
 	a{
 	 	color: $white;
 	 	display: block;
@@ -409,13 +430,42 @@ body.speakers nav#main a:after{color: $blue;}
 	 	}
 	}
 	.article-header{
-		width: 100%;
 		overflow: hidden;
+		padding: 0 0 0 0;
 		margin-bottom: 10px;
 		.speaker-title a{
 			margin-right: 10px;
+			@media (max-width: 768px) {
+				text-align: center;
+			}
 		}
+	
 	}
+	
+	.icon-container{
+		width: 100%;
+		margin: 20px 0;
+	}
+	
+	.avatar-frame,.avatar-frame img{
+	width: 90px;
+	height: 90px;
+	-webkit-border-radius: 50px; /* Saf3+, Chrome */
+	border-radius: 50px; /* Opera 10.5, IE 9 */
+	/*-moz-border-radius: 50x;  Disabled for FF1+ */
+	padding-left: 0;
+	margin: 0 auto;
+	}
+}
+
+.speaker-description{
+	margin-top: 10px;
+}
+
+.video-link{
+	margin-top: 40px;
+	display: block;
+	overflow: hidden;
 }
 
 .video-link .fa-video-camera{
@@ -426,7 +476,7 @@ body.speakers nav#main a:after{color: $blue;}
 	font-size: 16px;
 	color: $white;
 	text-decoration: underline;
-		margin-top: 20px;
+		
 }
 
 // Live Feed
@@ -456,6 +506,16 @@ body.live-feed nav#main a:after{color: $green;}
 
 .speaker-intro{
 	text-align: center;
+		.avatar-frame,.avatar-frame img{
+	width: 150px;
+	height: 150px;
+	-webkit-border-radius: 70px; /* Saf3+, Chrome */
+	border-radius: 70px; /* Opera 10.5, IE 9 */
+	/*-moz-border-radius: 50x;  Disabled for FF1+ */
+	padding-left: 0;
+	margin: 0 auto;
+}
+
 }
 
 

@@ -15,7 +15,8 @@
 					%article
 						.speaker-intro
 							- if current_article.data[:image]
-								%img{:src => current_article.data[:image]}
+								.avatar-frame
+									%img{:src => "../images/speakers/#{current_article.data[:image]}"}
 							- else 
 								%img{:src => '../images/placeholder.png'}
 							%h1.speaker-title

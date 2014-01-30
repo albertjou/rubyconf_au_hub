@@ -5,44 +5,53 @@ title: speakers
 %h2 
 	Wednesday 19th February @ Vibe Hotel North Sydney
 - page_articles.select {|article| article.data[:type] == 'speaker' }.each do |article|
-	.article-wrapper.col-sm-5.speaker-box
-		.article-content.col-sm-10
-			.article-header
-				%h3.speaker-title 
-					= link_to article.title, article 
-					
-				- if article.data[:twitter] != nil
-					%span
-						%a.fa{:href => "http://twitter.com/#{article.data[:twitter]}"}
-							%i.fa.fa-twitter
-				- if article.data[:linkedin] != nil
-					%span
-						%a.fa{:href => "http://linkedin.com/#{article.data[:linkedin]}"}
-							%i.fa.fa-linkedin
-				- if article.data[:github] != nil
-					%span
-						%a.fa{:href => "http://github.com/#{article.data[:github]}"}
-							%i.fa.fa-github
+	.article-frame.col-sm-5
+		.article-wrapper.col-sm-12.speaker-box
+
+			.article-header.col-sm-9
+				.col-sm-12
+					%h3.speaker-title 
+						= link_to article.title, article 
+						
+					- if article.data[:twitter] != nil
+						%span
+							%a.fa{:href => "http://twitter.com/#{article.data[:twitter]}"}
+								%i.fa.fa-twitter
+					- if article.data[:linkedin] != nil
+						%span
+							%a.fa{:href => "http://linkedin.com/#{article.data[:linkedin]}"}
+								%i.fa.fa-linkedin
+					- if article.data[:github] != nil
+						%span
+							%a.fa{:href => "http://github.com/#{article.data[:github]}"}
+								%i.fa.fa-github
+				.col-sm-12
+					%p.speaker-description
+						= article.data[:description]
 			
-			%p
-				= article.data[:description]
-			
-			%p
+			.avatar-frame.col-sm-3
+				- if article.data[:image] != nil
+					%img{:src => "../images/speakers/#{article.data[:image]}"}
+				- else 		
+					%img{:src => 'images/placeholder.png'}
+		
+			.col-sm-12
+				
 				- if article.data[:talks] != nil
 					%a{:href => '#'}
 						%i.fa.fa-comments
 						- $current_title = article.title
 						- page_articles.select {|article| article.data[:type] == 'talk' && article.data[:speaker] == $current_title }.each do |article|
 							= article.title
-			
-			%p				
+				
+								
 				- if article.data[:workshops] != nil	
 					%a{:href => '#'}
 						%i.fa.fa-wrench	
 						- page_articles.select {|article| article.data[:type] == 'workshop' && article.data[:speaker] == $current_title }.each do |article|
 							= article.title
-			
-			%p					
+				
+									
 				- if article.data[:video] != nil
 					%span.video-link
 						%a{:href => '#'}
