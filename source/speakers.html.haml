@@ -34,7 +34,7 @@ title: speakers
 						
 						- $current_title = article.title
 						- page_articles.select {|article| article.data[:type] == 'talk' && article.data[:speaker] == $current_title }.each do |article|
-							= article.title#', '
+							= article.title
 
 			- if article.data[:video] != nil	
 				%span

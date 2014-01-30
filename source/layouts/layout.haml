@@ -8,9 +8,9 @@
 			= current_page.data.title || "Rubyconf Australia"
 		= stylesheet_link_tag "normalize", "application" 
 		= javascript_include_tag  "all" 
-	= partial 'header'
+		= partial 'header'
 	%body{:class => page_classes}
-	%section#main-content.col-md-12
-		.container.col-md-12
-			= yield
+		%section#main-content.col-md-12
+			.container.col-md-12
+				= yield
 	= partial 'footer'

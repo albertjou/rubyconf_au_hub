@@ -3,7 +3,7 @@
 ###
 
 # Time.zone = "UTC"
-activate :livereload
+
 activate :blog do |blog|
   blog.sources = "talks/{year}-{month}-{day}-{title}.html"
 	blog.paginate = true
@@ -14,8 +14,7 @@ end
 activate :directory_indexes
 
 page "/feed.xml", layout: false
-page "/blog", layout: "blog_list"
-
+page "/talks/*/summary.html", layout: false
 
 ###
 # Compass
@@ -55,7 +54,7 @@ page "/blog", layout: "blog_list"
 # activate :automatic_image_sizes
 
 # Reload the browser automatically whenever files change
-# activate :livereload
+#activate :livereload
 
 # Methods defined in the helpers block are available in templates
 # helpers do

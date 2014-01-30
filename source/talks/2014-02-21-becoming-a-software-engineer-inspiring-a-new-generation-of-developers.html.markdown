@@ -1,6 +1,6 @@
 ---
 type: talk
-title: Becoming a Software Engineer: Insipring a New Generation of Developers
+title: Becoming a Software Engineer Insipring a New Generation of Developers
 date: 2014-02-21
 day: friday
 time: 2:40pm to 3:20pm
