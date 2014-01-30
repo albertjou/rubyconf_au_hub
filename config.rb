@@ -10,6 +10,7 @@ activate :blog do |blog|
   blog.tag_template = "tag.html"
   blog.calendar_template = "calendar.html"
   blog.layout = "single_post"
+  blog.permalink = "/{title}.html"
 end
 activate :directory_indexes
 

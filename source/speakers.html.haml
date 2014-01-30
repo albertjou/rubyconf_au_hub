@@ -27,17 +27,28 @@ title: speakers
 			%p
 				= article.data[:description]
 			
-			- if article.data[:talks] != nil
-				%span
+			%p
+				- if article.data[:talks] != nil
 					%a{:href => '#'}
 						%i.fa.fa-comments
-						
 						- $current_title = article.title
 						- page_articles.select {|article| article.data[:type] == 'talk' && article.data[:speaker] == $current_title }.each do |article|
 							= article.title
-
-			- if article.data[:video] != nil	
-				%span
-					%i.fa.fa-video	
+			
+			%p				
+				- if article.data[:workshops] != nil	
+					%a{:href => '#'}
+						%i.fa.fa-wrench	
+						- page_articles.select {|article| article.data[:type] == 'workshop' && article.data[:speaker] == $current_title }.each do |article|
+							= article.title
+			
+			%p					
+				- if article.data[:video] != nil
+					%span.video-link
+						%a{:href => '#'}
+							%i.fa.fa-video-camera
+							Watch our interview with 
+							= article.data[:title]
+						
 					
 				

@@ -5,10 +5,10 @@ tags: talk
 twitter: alex
 github: alex-coles
 linkedin: alex-coles
-workshops:
+workshops: Some Workshop
 talks: Front End Choices
-video: alex-coles
-image: alex-coles-img
+video: alex-coles-video
+image:
 description: This talk exists primarily as a "State 
 ---
 

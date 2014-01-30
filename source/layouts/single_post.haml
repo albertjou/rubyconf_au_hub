@@ -1,26 +1,57 @@
 <!doctype html>
 %html
-  %head
-  %meta{:charset => "utf-8"}
-%title 
-  = current_page.data.title || "Rubyconf Australia"
-= stylesheet_link_tag "normalize", "application" 
-= javascript_include_tag  "all" 
-= partial 'header'
-%body{:class => page_classes}
-.col-md-12#container
-  %article
-    %h1
-      = current_article.title
-    = current_article.body
-
-  - if current_article.data[:type] == 'speaker'
-    - page_articles.select {|article| article.data[:speaker] == 'John Doe' }.each_with_index do |article|
-      %h2 
-      = link_to article.title, article 
-      %span 
-      = article.date.strftime('%b %e')
-
-      = article.body
-
-  
+	%head
+		%meta{:charset => "utf-8"}
+		%link{:href => "//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css", :rel => "stylesheet"}
+		%script{:src => "//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"}
+		%title 
+			= current_page.data.title || "Rubyconf Australia"
+		= stylesheet_link_tag "normalize", "application" 
+		= javascript_include_tag  "all" 
+		= partial 'header'
+		%body{:class => page_classes}
+			%section.talk-module
+				.col-md-12.container
+					%article
+						.speaker-intro
+							- if current_article.data[:image]
+								%img{:src => current_article.data[:image]}
+							- else 
+								%img{:src => '../images/placeholder.png'}
+							%h1.speaker-title
+								= current_article.title
+						%h2.title About the speaker
+						= current_article.body
+						
+			- if current_article.data[:talks]
+				%section.speaker-talks
+					.col-md-12.container
+						- $current_speaker = current_article.data[:title]
+						- page_articles.select{|article| article.data[:speaker] == $current_speaker && article.data[:type] == 'talk'}.each do |article|
+							%li.fa.fa-comments
+							%h2.title
+								=article.title
+							=article.body
+						
+			- if current_article.data[:workshops]
+				%section.speaker-workshops
+					.col-md-12.container
+						- page_articles.select{|article| article.data[:speaker] == $current_speaker && article.data[:type] == 'workshop'}.each do |article|
+							%li.fa.fa-wrench
+							%h2.title
+								=article.title
+							=article.body
+						
+			- if current_article.data[:video]
+				%section.speaker-video
+					.col-md-12.container
+						.col-md-5
+							%iframe{:width => "560", :height => "315", :src => current_article.data[:video], :frameborder => "0"}
+						.col-md-7
+							%h3
+								Interview With
+								=current_article.title
+	
+	= partial 'footer'
+	
+	
