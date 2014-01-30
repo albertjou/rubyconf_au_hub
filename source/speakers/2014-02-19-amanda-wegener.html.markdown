@@ -10,4 +10,4 @@ talks: The Parental Programmer
 video: 
 image: amanda-wagener.jpg
 description: Rogue scholar.
-
+---

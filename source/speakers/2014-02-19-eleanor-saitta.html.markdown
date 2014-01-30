@@ -10,4 +10,4 @@ talks: TBD
 video: 
 image: eleanor-saitta.png
 description: Thinking about systems, security, failure, change, art, and living. Recruiting barbarians.
-
+---

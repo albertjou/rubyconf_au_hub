@@ -9,7 +9,10 @@ workshops:
 talks: The Golden Age of the Internet
 video: 
 image: pat-allan.jpg
-description: Pat Allan is a freelancing web developer usually located in Melbourne, Australia. When not caught up in code, he can be found helping organise Rails Camps and Trampolines. His thoughts are blogged semi-regularly at freelancing-gods.com, and he’s been known to make a mean pancake.
+description: 
+---
+
+Pat Allan is a freelancing web developer usually located in Melbourne, Australia. When not caught up in code, he can be found helping organise Rails Camps and Trampolines. His thoughts are blogged semi-regularly at freelancing-gods.com, and he’s been known to make a mean pancake.
 
 Specialties
 Ruby, Rails, Sphinx, HTML, Javascript, CSS, OS X

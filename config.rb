@@ -6,11 +6,15 @@
 activate :livereload
 activate :blog do |blog|
   blog.sources = "talks/{year}-{month}-{day}-{title}.html"
-	blog.paginate = true
+
   blog.tag_template = "tag.html"
   blog.calendar_template = "calendar.html"
   blog.layout = "single_post"
   blog.permalink = "/{title}.html"
+    # Enable pagination
+  blog.paginate = true
+   blog.per_page = 100
+  # blog.page_link = "page/{num}"
 end
 activate :directory_indexes
 

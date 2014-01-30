@@ -22,7 +22,7 @@
 							%h1.speaker-title
 								= current_article.title
 						%h2.title About the speaker
-						- if current_article.body == ""
+						- if current_article.body > " "
 							= current_article.body
 						- else 
 							%p Speaker bio coming soon.		
@@ -57,7 +57,7 @@
 								=current_article.title
 					- else
 						%h3 
-							Check back soon for the speakers video interview
+							Check back soon for the speaker's video interview.
 								
 	
 	= partial 'footer'
