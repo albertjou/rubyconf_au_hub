@@ -2,7 +2,9 @@
 type: talk
 title: Continuous Deployment with Rails
 date: 2014-02-21
-day: friday
+day: Friday
+session: 2:40pm
+room: Room 1
 time: 2:40pm to 3:20pm
 tags: talk
 speakers: Keith Pitt, Mario Visic

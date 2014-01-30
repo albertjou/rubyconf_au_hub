@@ -2,7 +2,9 @@
 type: talk
 title: Real Developers Ship (a.k.a Tenets for Software Delivery)
 date: 2014-02-21
-day: friday
+day: Friday
+session: 11:45am
+room: Room 2
 time: 11:45am to 12:30pm
 tags: talk
 speaker: Sebastian von Conrad

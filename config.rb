@@ -4,29 +4,33 @@
 
 # Time.zone = "UTC"
 activate :livereload
-activate :blog do |blog|
-  blog.sources = "talks/{year}-{month}-{day}-{title}.html"
+activate :the_hub do |h|
+  h.days = %w{ Wednesday Thursday Friday}
 
-  blog.tag_template = "tag.html"
-  blog.calendar_template = "calendar.html"
-  blog.layout = "single_post"
-  blog.permalink = "/{title}.html"
-    # Enable pagination
-  blog.paginate = true
-   blog.per_page = 100
-  # blog.page_link = "page/{num}"
+  h.sessions = {
+    :wednesday => [ '9:00AM'
+  ],
+  :thursday => [ '9:00am', '10:15am', '11:00am', '11:45am', '2:00pm', '2:40pm', '3:20pm', '4:15pm'
+  ],
+  :friday => [ '9:00am', '10:15am', '11:00am', '11:45am', '2:00pm', '2:40pm', '3:20pm', '4:15pm'
+  ]
+  }
+
+  h.breakouts = {
+    wednesday: {
+  },
+   thuresday: {
+  },
+    friday: {
+  }
+}
+
+  h.rooms = ['Room 1', 'Room 2']
 end
+
 activate :directory_indexes
 
 page "/feed.xml", layout: false
-page "/blog", layout: "blog_list"
-
-helpers do
-  def sortable_time time
-    DateTime.strptime(time.match(/\d+:\d+[ap]m/).to_s, "%I:%M%P")
-  end
-end
-
 
 ###
 # Compass

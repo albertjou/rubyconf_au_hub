@@ -2,7 +2,9 @@
 type: talk
 title: Modern Concurrency Practices in Ruby
 date: 2014-02-20
-day: thurs
+day: Thursday
+session: 2:40pm
+room: Room 1
 time: 2:40pm to 3:20pm
 tags: talk
 speaker: Arnab Deka
