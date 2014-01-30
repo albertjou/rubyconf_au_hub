@@ -1,0 +1,15 @@
+---
+type: speaker
+title: Amy Hoy
+date: 2014-02-19
+tags: workshop
+twitter: https://twitter.com/amyhoy
+linkedin:
+workshops:
+talks: TBD
+video:
+image: amy-hoy.png
+description:
+---
+
+Amy started coding at age of six. And designing web sites at age of ten. And she hated working for bigcos and startups, but it taught her a lot, namely: Nobody "in charge" knows what they're doing, so why not do it herself… and keep all the money? So she set out to use her skills to bootstrap, and recruited her husband as well. In December, Freckle—their web app—crossed $1M in lifetime revenue. Now she is writing this bio at home, with her cats, in her Jessica London full-body fleece robe, as she contemplates a trip to Australia where people will come to see her rant about marketing on stage. All thanks to research and tiny but continuous execution. Boring but profitable.
