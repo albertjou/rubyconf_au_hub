@@ -21,6 +21,12 @@ activate :directory_indexes
 page "/feed.xml", layout: false
 page "/blog", layout: "blog_list"
 
+helpers do
+  def sortable_time time
+    DateTime.strptime(time.match(/\d+:\d+[ap]m/).to_s, "%I:%M%P")
+  end
+end
+
 
 ###
 # Compass
