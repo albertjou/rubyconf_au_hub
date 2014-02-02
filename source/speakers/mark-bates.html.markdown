@@ -1,7 +1,6 @@
 ---
 type: speaker
-title: Mark Bates
-tags: speaker
+name: Mark Bates
 twitter: https://twitter.com/markbates
 github: https://github.com/markbates
 linkedin: 

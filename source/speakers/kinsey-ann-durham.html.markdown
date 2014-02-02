@@ -1,7 +1,6 @@
 ---
 type: speaker
-title: Kinsey Ann Durham
-tags: speaker
+name: Kinsey Ann Durham
 twitter: https://twitter.com/KinseyAnnDurham
 github: 
 linkedin: http://www.linkedin.com/pub/kinsey-ann-durham/23/341/b03

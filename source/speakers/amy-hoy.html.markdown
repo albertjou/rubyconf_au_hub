@@ -1,8 +1,7 @@
 ---
 type: speaker
-title: Amy Hoy
+name: Amy Hoy
 date: 2014-02-19
-tags: workshop
 twitter: https://twitter.com/amyhoy
 linkedin:
 workshops:

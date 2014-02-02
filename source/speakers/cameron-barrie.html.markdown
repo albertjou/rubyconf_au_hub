@@ -1,7 +1,6 @@
 ---
 type: speaker
-title: Cameron Barrie
-tags: speaker
+name: Cameron Barrie
 twitter: https://twitter.com/whalec
 github: 
 linkedin: http://au.linkedin.com/in/cameronbarrie

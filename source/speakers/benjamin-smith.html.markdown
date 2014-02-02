@@ -1,7 +1,6 @@
 ---
 type: speaker
-title: Benjamin Smith
-tags: speaker
+name: Benjamin Smith
 twitter: https://twitter.com/benjamin_smith
 github: https://github.com/benjaminleesmith
 linkedin: 

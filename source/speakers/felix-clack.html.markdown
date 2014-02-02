@@ -1,7 +1,6 @@
 ---
 type: speaker
-title: Felix Clack
-tags: speaker
+name: Felix Clack
 twitter: https://twitter.com/felixclack
 github: https://github.com/felixclack
 linkedin: http://uk.linkedin.com/in/felixclack

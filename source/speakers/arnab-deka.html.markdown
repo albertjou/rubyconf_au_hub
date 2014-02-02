@@ -1,7 +1,6 @@
 ---
 type: speaker
-title: Arnab Deka
-tags: speaker
+name: Arnab Deka
 twitter: https://twitter.com/arnab_deka
 github: 
 linkedin: http://in.linkedin.com/in/arnab1981

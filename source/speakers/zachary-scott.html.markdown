@@ -1,7 +1,6 @@
 ---
 type: speaker
-title: Zachary Scott
-tags: speaker
+name: Zachary Scott
 twitter: https://twitter.com/_zzak
 github: https://github.com/zzak
 linkedin: 

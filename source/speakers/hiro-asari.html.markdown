@@ -1,7 +1,6 @@
 ---
 type: speaker
-title: Hiro Asari
-tags: speaker
+name: Hiro Asari
 twitter: https://twitter.com/hiro_asari
 github: https://github.com/BanzaiMan
 linkedin: http://www.linkedin.com/in/hiroasari

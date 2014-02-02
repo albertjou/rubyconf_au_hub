@@ -1,7 +1,6 @@
 ---
 type: speaker
-title: Ben Turner
-tags: speaker
+name: Ben Turner
 twitter: https://twitter.com/phantomwhale
 github: 
 linkedin: 

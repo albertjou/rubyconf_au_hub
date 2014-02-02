@@ -1,7 +1,6 @@
 ---
 type: speaker
-title: Zach Holman
-tags: speaker
+name: Zach Holman
 twitter: https://twitter.com/holman
 github: https://github.com/holman
 linkedin: 

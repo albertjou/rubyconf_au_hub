@@ -1,7 +1,6 @@
 ---
 type: speaker
-title: Jon Rowe
-tags: speaker
+name: Jon Rowe
 twitter: https://twitter.com/JonRowe
 github: https://github.com/JonRowe
 linkedin: 

@@ -1,7 +1,6 @@
 ---
 type: speaker
-title: Pat Allan
-tags: speaker
+name: Pat Allan
 twitter: https://twitter.com/pat
 github: https://github.com/freelancing-god
 linkedin: http://au.linkedin.com/in/patallan
