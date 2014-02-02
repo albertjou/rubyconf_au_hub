@@ -2,7 +2,9 @@
 type: talk
 title: What it is you really do?
 date: 2014-02-20
-day: thurs
+day: Thursday
+session: 9:00am
+room: Room 1
 time: 9:00am to 10:00am
 tags: example, talk
 speaker: Cameron Barrie

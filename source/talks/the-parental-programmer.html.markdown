@@ -2,7 +2,9 @@
 type: talk
 title: The Parental Programmer
 date: 2014-02-20
-day: thurs
+day: Thursday
+session: 11:45am
+room: Room 2
 time: 11:45am to 12:30am
 tags: talk
 speaker: Amanda Wagener

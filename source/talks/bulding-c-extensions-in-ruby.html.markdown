@@ -2,7 +2,9 @@
 type: talk
 title: Building C Extensions in Ruby
 date: 2014-02-21
-day: friday
+day: Friday
+session: 11:00am
+room: Room 2
 time: 11.00am to 11:45am
 tags: talk
 speaker: André Medeiros

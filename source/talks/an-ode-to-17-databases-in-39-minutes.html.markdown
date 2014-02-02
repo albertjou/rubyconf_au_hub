@@ -2,8 +2,10 @@
 type: talk
 title: An Ode to 17 Databases in 39 minutes
 date: 2014-02-20
-day: thurs
+day: Thursday
 time: 2:00pm to 2:40pm
+session: 2:00pm
+room: Room 1
 tags: talk
 speaker: Toby Hede
 location: Luna Park Crystal Place

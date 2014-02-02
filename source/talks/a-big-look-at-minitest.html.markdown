@@ -2,7 +2,9 @@
 type: talk
 title: A Big Look at MiniTest
 date: 2014-02-20
-day: thurs
+day: Thursday
+session: 10:15am
+room: Room 1
 time: 10:15am to 11:00am
 tags: example, talk
 speaker: Mark Bates

@@ -277,11 +277,11 @@ body.scheduler footer{
 	display: inline-block;
 	width: 45%;
 	&:nth-child(odd){
-		float: left;
+		float: right;
 	}
 	
 	&:nth-child(even){
-		float: right;
+		float: left;
 	}
 	
 	@media (max-width: 1000px) {

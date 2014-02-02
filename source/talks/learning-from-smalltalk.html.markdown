@@ -2,7 +2,9 @@
 type: talk
 title: Learning from Smalltalk
 date: 2014-02-21
-day: friday
+day: Friday
+session: 3:20pm
+room: Room 2
 time: 3:20pm to 4:00pm
 tags: talk
 speaker: Sasha Gerrand

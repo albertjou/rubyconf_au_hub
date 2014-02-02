@@ -1,0 +1,6 @@
+.slide-frame.md-col-9 id="#{day.code}" class=('active' if day.active?(current_resource))
+  - day.sessions.each do |s|
+    .session
+      .time-row
+        h3 = s.time
+      == partial("scheduler/#{s.type}", :object => s) if s.type

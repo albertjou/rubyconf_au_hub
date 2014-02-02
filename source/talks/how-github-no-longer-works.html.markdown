@@ -1,7 +1,9 @@
 ---
 type: talk
 date: 2014-02-20
-day: thurs
+day: Thursday
+session: 11:00am
+room: Room 1
 title: How Github (no longer) works
 time: 11:00am to 11:45am
 tags: example, talk

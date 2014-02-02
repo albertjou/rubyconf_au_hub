@@ -2,7 +2,9 @@
 type: workshop
 title: Testing Zero to Hero
 date: 2014-02-19
-day: wed
+day: Wednesday
+session: 9:00am
+room: Room 1
 time: 9:00am to 10:00am
 tags: workshop
 speaker: Jon Rowe
