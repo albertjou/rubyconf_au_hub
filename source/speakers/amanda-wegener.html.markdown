@@ -1,7 +1,6 @@
 ---
 type: speaker
-title: Amanda Wagener
-tags: speaker
+name: Amanda Wagener
 twitter: https://twitter.com/a_wagener
 github: https://github.com/awagener
 linkedin: 

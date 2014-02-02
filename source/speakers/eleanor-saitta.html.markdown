@@ -1,7 +1,6 @@
 ---
 type: speaker
-title: Eleanor Saitta
-tags: speaker
+name: Eleanor Saitta
 twitter: https://twitter.com/Dymaxion
 github: 
 linkedin: 

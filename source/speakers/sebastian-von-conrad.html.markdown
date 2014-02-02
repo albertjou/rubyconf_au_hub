@@ -1,7 +1,6 @@
 ---
 type: speaker
-title: Sebastian von Conrad
-tags: speaker
+name: Sebastian von Conrad
 twitter: https://twitter.com/vonconrad
 github: https://github.com/vonconrad
 linkedin: http://au.linkedin.com/in/vonconrad

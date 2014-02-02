@@ -1,7 +1,6 @@
 ---
 type: speaker
-title: Darcy Laycock
-tags: speaker
+name: Darcy Laycock
 twitter: https://twitter.com/Sutto
 github: https://github.com/sutto
 linkedin: http://au.linkedin.com/in/darcylaycock

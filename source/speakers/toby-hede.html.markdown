@@ -1,7 +1,6 @@
 ---
 type: speaker
-title: Toby Hede
-tags: speaker
+name: Toby Hede
 twitter: https://twitter.com/tobyhede
 github: https://github.com/tobyhede
 linkedin: http://au.linkedin.com/in/tobyhede

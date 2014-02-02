@@ -1,7 +1,6 @@
 ---
 type: speaker
-title: André Medeiros
-tags: speaker
+name: André Medeiros
 twitter: https://twitter.com/superdealloc
 github: https://github.com/andremedeiros
 linkedin: http://nl.linkedin.com/in/changelog

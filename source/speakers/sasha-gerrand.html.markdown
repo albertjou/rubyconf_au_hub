@@ -1,7 +1,6 @@
 ---
 type: speaker
-title: Sasha Gerrand
-tags: speaker
+name: Sasha Gerrand
 twitter: https://twitter.com/sgerrand
 github: https://github.com/sgerrand
 linkedin: 

@@ -1,7 +1,6 @@
 ---
 type: speaker
-title: Sam Saffron
-tags: speaker
+name: Sam Saffron
 twitter: https://twitter.com/samsaffron
 github: https://github.com/SamSaffron
 linkedin: http://au.linkedin.com/in/samsaffron

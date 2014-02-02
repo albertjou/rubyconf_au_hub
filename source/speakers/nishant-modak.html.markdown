@@ -1,7 +1,6 @@
 ---
 type: speaker
-title: Nishant Modak
-tags: speaker
+name: Nishant Modak
 twitter: https://twitter.com/nishantmodak
 github: https://github.com/nishantmodak
 linkedin: http://in.linkedin.com/in/modak

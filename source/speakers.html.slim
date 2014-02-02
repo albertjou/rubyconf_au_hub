@@ -1,0 +1,48 @@
+---
+title: speakers
+---
+
+h2
+  | Speakers & Talks @ RubyConf 2014
+- speakers.each do |speaker|
+  .article-frame.col-sm-5
+    .article-wrapper.col-sm-12.speaker-box
+
+      .article-header.col-sm-9
+        .col-sm-12
+          h3.speaker-title 
+            = link_to speaker.name, speaker
+            
+          - if speaker.twitter
+            span
+              = link_to speaker.twitter, :target => "_blank", :class => "fa" do
+                i.fa.fa-twitter
+          - if speaker.data[:github] != nil
+            span
+              = link_to speaker.github, :target => "_blank", :class => "fa" do
+                i.fa.fa-github
+        .col-sm-12
+          p.speaker-description
+            = speaker.data[:description]
+      
+      .avatar-frame.col-sm-3
+        - if speaker.data[:image] != nil
+          = image_tag "speakers/#{speaker.image}"
+
+      .col-sm-12
+
+        = link_to speaker.talk do
+          i.fa.fa-comments
+          = speaker.talk.title
+/      .col-sm-12
+/        - page_articles.select {|article| article.data[:type] == 'workshop' && article.data[:speaker] == $current_title }.each do |article|
+/          %a{:href => '#'}
+/            %i.fa.fa-wrench 
+/            = article.name
+    
+/        - if article.data[:video] != nil
+/          %span.video-link
+/            %a{:href => '#'}
+/              %i.fa.fa-video-camera
+/              Watch our interview with 
+/              = article.data[:name]
