@@ -1,5 +1,6 @@
-PATH
-  remote: ~/src/middleman-conference_hub
+GIT
+  remote: git://github.com/ninefold/middleman-conference_hub.git
+  revision: 9128d59b3fdbeff3912e877b0920b92dfb3d0316
   specs:
     middleman-conference_hub (0.1.0)
       middleman-core (~> 3.2.0)
