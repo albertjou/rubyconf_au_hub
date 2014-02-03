@@ -11,7 +11,7 @@ $(function() {
   else
   {
 	  $('nav ul li a[href^="/' + location.pathname.split("/")[1] + '"]').addClass('active');
-	 }
+  }
 });
 
 	
@@ -73,9 +73,7 @@ $(function() {
       setCookie('multifaceted_scheduler', activeTitles, 100); 
 			
 		});
-		
-		
-		
+
 	});
 	
 	// Function to retrive a cookie
@@ -112,5 +110,28 @@ $(function() {
   }
   
   checkCookie();
+  
+  // Create the dropdown base
+  $("<select />").appendTo("nav");
+  
+  // Create default option "Go to..."
+  $("<option />", {
+     "selected": "selected",
+     "value"   : "Menu",
+     "text"    : '' 
+  }).appendTo("nav select");
+  
+  // Populate dropdown with menu items
+  $("nav a").each(function() {
+   var el = $(this);
+   $("<option />", {
+       "value"   : el.attr("href"),
+       "text"    : el.text()
+   }).appendTo("nav select");
+  });
+
+  $("nav select").change(function() {
+    window.location = $(this).find("option:selected").val();
+  });
 	
 });	

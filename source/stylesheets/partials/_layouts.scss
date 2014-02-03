@@ -115,6 +115,11 @@ header{
 	font-size: 25px;
 	font-family: $omnes-reg;
 	padding-top: 58px;
+	a{
+  	&:hover{
+    	text-decoration: none;
+  	}
+	}
 	h1{
 		font-size: 46px;
 		text-transform: uppercase;
@@ -145,6 +150,36 @@ header{
 	}
 	.col-md-3, .col-md-6{
 		padding: 0px;
+	}
+	
+  @media(max-width:645px){
+    
+    padding-top: 20px !important;
+    
+    .site-title{
+      max-width: 285px;
+      text-align: left;
+      float: left;
+    }
+    h1{
+      font-size: 26px;
+      line-height: 20px;
+      padding-left: 25px;
+      background-size: contain;
+    }
+    h2{
+      font-size: 25px;
+    }
+    
+    .date-location{
+      font-size: 17px;
+      line-height: 16px;
+    }
+    
+    .col-md-3{
+  		display: none;
+  	}
+  	
 	}
 }
 
@@ -206,13 +241,44 @@ nav#main{
 					&:after{
 						display: block;
 					}
-				
 			}
 		}
 	}
+	
+	@media(max-width:645px){
+  	ul{
+    	display: none;
+  	}
+  	select{
+    	margin-top: -50px;
+  	}
+	}
+	
 }
 
-
+nav select { display: inline-block; }
+  
+nav select {
+  -webkit-appearance: button;
+  background: url(../images/hamburger.png);
+  width: 32px;
+  height: 32px;
+  background-size: 32px;
+  -webkit-padding-end: 20px;
+  -webkit-padding-start: 2px;
+  -webkit-user-select: none;
+  border: $black;
+  margin: 15px 25px 10px 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  z-index: 9999;
+  float: right;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px; /* future proofing */
+  -khtml-border-radius: 0px; /* for old Konqueror browsers */
+}
 
 // SCHEDULER
 
@@ -227,7 +293,6 @@ body.index footer{
 	background-repeat: no-repeat;
 	background-position: center bottom;
 	background-size: cover;
-
 }
 
 #conf-days{
@@ -424,7 +489,7 @@ body.index footer{
 .slide-frame{
 	display: none;
 	margin: 0 auto;
-	padding-bottom: 15px;
+	padding-bottom: 45px;
 	float: none;
 	
 	&.active{
@@ -498,6 +563,7 @@ body.index footer{
 
 body.speakers #main-content{
 	background: $blue;
+	
 }
 body.speakers nav#main a:after{color: $blue;}
 
@@ -610,6 +676,7 @@ body.speakers nav#main a:after{color: $blue;}
 ********************************/
 body.live-feed #main-content{
 	background: $green;
+	padding-bottom: 45px;
 }
 
 body.live-feed nav#main a:after{color: $green;}
@@ -742,6 +809,7 @@ footer {
 	background-size: cover;
 	margin-bottom: 0;
 	padding-top: 55px;
+	padding-bottom: 55px;
 	color: $white;
 	font-size: 34px;
 	font-family: $omnes-reg;

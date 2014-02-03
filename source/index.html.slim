@@ -17,7 +17,7 @@ title: Schedule —  RubyConf AU
       = day.location
     - day.query.where(:type => "workshop").all.each do |talk|
       .col-md-12
-        .article-wrapper
+        .article-wrapper data-title="#{talk.title}"
           .article-content.col-sm-10
             h3
               = link_to talk.title, url_for(talk.speaker, :anchor => "workshop")
