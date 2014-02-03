@@ -7,7 +7,7 @@ title: speakers
   - speakers.each_slice(2) do |row|
     .speakers-row.clearfix
       - row.each do |speaker|
-          .article-wrapper.col-sm-5.speaker-box
+          .article-wrapper.speaker-box
   
             .article-header
               .col-sm-12
@@ -31,7 +31,7 @@ title: speakers
               - else 
                 = image_tag "placeholder.png"
   
-            .col-sm-12
+            .col-sm-12.talk-links
   
               = link_to speaker.talk do
                 i.fa.fa-comments
