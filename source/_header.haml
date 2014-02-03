@@ -1,30 +1,31 @@
 %header
-	.col-md-12.container.head-content
-		.col-md-3
-			%p.ninefold-logo-txt Built & Hosted by
-			%img{:src => "/images/ninefold_logo.png", :alt => "Built & Hosted by Ninefold", :width => "99"}
-		.col-md-6.site-title
-			%h1 
-				Multifaceted 
-				%span 
-					Hub
-			%h2.yellow
-				Ruby Conf
-				%span.red
-					2014
-				%span.purple - Sydney
-			%p.date-location 19-21 February 2014 Sydney, Australia 
-		.col-md-3
-			%img{:src => "/images/ruby_conf_logo.svg", :alt => "Ruby Conf Australia 2014", :width => "100"}
-	
-
+  .col-md-12.container.head-content
+    .col-md-3
+      %p.ninefold-logo-txt Built & Hosted by
+      %a{:href => "http://ninefold.com", :target => "_blank"} 
+        %img{:src => "/images/ninefold_logo.png", :alt => "Built & Hosted by Ninefold", :width => "99"}
+    .col-md-6.site-title
+      %h1
+        Multifaceted 
+        %span 
+          Hub
+      %h2.yellow
+        Ruby Conf
+        %span.red 2014
+        %span.purple - Sydney
+      %p.date-location 19-21 February 2014 Sydney, Australia 
+    .col-md-3
+      %a{:href => "http://www.rubyconf.org.au/", :target => "_blank"}
+        %img{:src => "/images/ruby_conf_logo.svg", :alt => "Ruby Conf Australia 2014", :width => "100"}
+  
 %nav#main
-	%ul.container
-		%li.fa
-			%a{:href => "/scheduler"} Scheduler 
-		%li.fa
-			%a{:href => "/speakers"} Speakers & Talks 
-		%li.fa
-			%a{:href => "/live-feed"} Live Feed 
-			
-			
+  %ul.container
+    %li.fa
+      %a{:href => "/"} 
+        The Schedule 
+    %li.fa
+      %a{:href => "/speakers"} 
+        Speakers & Talks 
+    %li.fa
+      %a{:href => "/live-feed"} 
+        Live Feed 

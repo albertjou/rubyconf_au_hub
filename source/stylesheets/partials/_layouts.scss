@@ -170,7 +170,7 @@ nav#main{
 	background: $black;
 	padding-top: 20px;
 	ul{
-		width: 620px;
+		width: 660px;
 	 	height: 50px;
 	 	margin: 0 auto;
 	 	li{
@@ -485,7 +485,7 @@ body.speakers nav#main a:after{color: $blue;}
 .speaker-box{
 	margin: 20px 0;
 	background: $lightBlue;
-	width: 45%;
+	width: 47%;
 	@media (max-width: 760px)
 	{
   	width: 100% !important;
@@ -516,13 +516,14 @@ body.speakers nav#main a:after{color: $blue;}
 		margin-bottom: 10px;
 		display: inline-block;
 		float: left;
-		width: 60%;
+		width: 70%;
 		@media(max-width: 495px){
     	width: 100%;
     	float: right;
   	}
 		h3{
   		text-align: left;
+  		font-size: 22px !important;
 		}
 		.speaker-title a{
 			margin-right: 10px;
@@ -534,7 +535,7 @@ body.speakers nav#main a:after{color: $blue;}
 	}
 	
 	.avatar-frame{
-  	width: 40%;
+  	width: 30%;
   	@media(max-width: 495px){
     	width: 100%;
       float: none;
