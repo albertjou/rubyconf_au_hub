@@ -82,10 +82,6 @@ a {
 .purple{color: $purple;}
 
 
-.head-content{
-	min-width: 960px !important;
-}
-
 .container{
 	max-width: 960px;
 	margin: 0 auto;
@@ -100,6 +96,11 @@ header{
 	background-repeat: no-repeat;
 	background-position: center top;
 	width: 100%;
+}
+
+.site-title{
+  max-width: 470px;
+  margin: 20px auto;
 }
 
 .ninefold-logo-txt{
@@ -277,6 +278,9 @@ body.scheduler footer{
     position: absolute;
     left: -17px;
     font-size: 60px;
+    		@media(max-width: 768px){
+  		display: none;
+		}
   } 
 }
 
@@ -287,6 +291,9 @@ body.scheduler footer{
     position: absolute;
     right: -17px;
     font-size: 60px;
+    		@media(max-width: 768px){
+  		display: none;
+		}
   } 
 }
 
@@ -295,6 +302,9 @@ body.scheduler footer{
   background: url(../images/pink-line.jpg);
   background-repeat: repeat-y;
   background-position: center top;
+  @media(max-width: 768px){
+  		background: none;
+  }
   
   .session-time{
     position: absolute;
@@ -312,6 +322,9 @@ body.scheduler footer{
 	margin: 20px 0;
 	overflow: hidden;
 	display: inline-block;
+	    		@media(max-width: 768px){
+  		width: 100%;
+		}
 	&:nth-child(odd){
 		float: right;
 	}
@@ -329,15 +342,15 @@ body.scheduler footer{
   	}
 	}
 	.check-area{
-		width: 64px;
+		width: 30%;
 		height: 64px;
 		overflow: hidden;
+		text-align: right;
 		float: right;
 		background: url(../images/check-sprite.png);
 		background-repeat: no-repeat;
 		background-position: center top;
 		cursor: pointer;
-		width: 20%;
 		@media(max-width: 495px){
     	width: 100%;
     	text-align: center;
@@ -372,6 +385,7 @@ body.scheduler footer{
 		position: absolute;
 		right: -17px;
 		top: 15px;
+		
 	}
 		
 	li:nth-child(odd):after{
@@ -444,7 +458,7 @@ body.scheduler footer{
 }
 
 #main-content{
-	padding: 35px 30px;
+	padding: 35px 0px 0px 0px;
 	float: none;
 	h2{
 		font-size: 32px;
@@ -496,7 +510,9 @@ body.speakers nav#main a:after{color: $blue;}
 		overflow: hidden;
 		padding: 0 0 0 0;
 		margin-bottom: 10px;
-		
+		display: inline-block;
+		float: left;
+		width: 60%;
 		.speaker-title a{
 			margin-right: 10px;
 			
@@ -506,7 +522,13 @@ body.speakers nav#main a:after{color: $blue;}
 		}
 	}
 	
-	.avatar-frame,.avatar-frame img{
+	.avatar-frame{
+  	width: 30%;
+  	display: inline-block;
+  	text-align: center;
+  	float: right;
+	}
+	.avatar-frame img{
 	width: 90px;
 	height: 90px;
 	-webkit-border-radius: 50px; /* Saf3+, Chrome */
@@ -555,7 +577,7 @@ body.live-feed nav#main a:after{color: $green;}
 .talk-module{
 	background: $blue;
 	size: 30px;
-	padding: 45px 0;
+	padding: 25px 0 0 0;
 	
 	.title{
 		text-decoration: none;
@@ -571,7 +593,7 @@ body.live-feed nav#main a:after{color: $green;}
 }
 
 .speaker-intro{
-	text-align: center;
+  padding-bottom: 30px;
 	.avatar-frame,.avatar-frame img{
 		width: 150px;
 		height: 150px;
@@ -581,35 +603,50 @@ body.live-feed nav#main a:after{color: $green;}
 		padding-left: 0;
 		margin: 0 auto;
 	}
+	.title{
+  	text-transform: none !important;
+  	text-align: left !important;
+	}
 }
 
 .speaker-talks{
   width: 100%;
   background: $white;
-	margin: 45px auto;
-	.title{
+	padding: 45px 0 20px 0;
+	h2{
 		text-transform: none;
-		color: $lightBlue;
+		color: $lightBlue !important;
 		font-size: 24px;
+		text-align: left !important;
 	}
 	.fa{
 		display: inline-block;
 		float: left;
-		font-size: 30px;
+		font-size: 40px;
 		padding-right: 10px;
+		padding-top: 10px;
 		color: $lightBlue;
 	}
 }
 
 .speaker-workshops{
-	margin: 45px auto;
+	padding: 10px 0 45px 0;
+	background: $white;
 	.fa{
 		display: inline-block;
 		float: left;
-		font-size: 30px;
+		font-size: 40px;
+		padding-top: 10px;
 		padding-right: 10px;
 		color: $lightBlue;
 	}
+	h2{
+		text-transform: none;
+		color: $lightBlue !important;
+		font-size: 24px;
+		text-align: left !important;
+	}
+
 }
 
 .speaker-video{

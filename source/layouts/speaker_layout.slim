@@ -1,13 +1,12 @@
 - wrap_layout :layout do
   section.talk-module
-    .container
       article
-        .speaker-intro
-          - if current_resource.image
-            .avatar-frame
-              = image_tag "speakers/#{current_resource.image}"
-          - else
-            = image_tag "placeholder.png"
+        .speaker-intro.container
+          .avatar-frame 
+              - if current_resource.image
+                = image_tag "speakers/#{current_resource.image}"
+              - else
+                = image_tag "placeholder.png"
           h1.speaker-title
             = current_resource.name
           h2.title About the speaker
@@ -27,7 +26,7 @@
             h2.title
               = current_resource.workshop.title
             = current_resource.workshop.body
-            = link_to "Buy workshop ticket", "http://www.eventbrite.com.au/e/rubyconf-australia-2014-tickets-8449999175", :target => '_blank'
+            = link_to "Buy workshop ticket", "http://www.eventbrite.com.au/e/rubyconf-australia-2014-tickets-8449999175", :target => '_blank', :class => 'btn'
       section.speaker-video
         .col-md-12.container
           - if current_resource.video_link
