@@ -7,11 +7,14 @@ title: Schedule —  RubyConf AU
   ul
     - planner.days.each do |day|
       li class=('active' if day.active?(current_resource)) data-slide-id="#{day.shortname}"
-        = day.name
+        = day.button_name
 
 - planner.days.each do |day|
   .slide-frame class="#{day.shortname}"
-    h2 Wednesday 19th February @ Vibe Hotel North Sydney 9:00am - 5:00pm
+    h2
+      = day.pretty_name
+      |  @ 
+      = day.location
     - day.sessions.each do |session|
       .session.clearfix
         .session-time
