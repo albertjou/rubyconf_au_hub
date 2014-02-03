@@ -270,12 +270,48 @@ body.scheduler footer{
 	}
 }
 
-.article-frame{
-	height: 270px;
-	padding: 0;
-	margin: 0;
+.session .article-wrapper:nth-child(odd){
+  &:before{
+    content: "\f0d9";
+    color: #fff;
+    position: absolute;
+    left: -17px;
+    font-size: 60px;
+  } 
+}
+
+.session .article-wrapper:nth-child(even){
+  &:after{
+    content: "\f0da";
+    color: #fff;
+    position: absolute;
+    right: -17px;
+    font-size: 60px;
+  } 
+}
+
+.session{
+  
+  background: url(../images/pink-line.jpg);
+  background-repeat: repeat-y;
+  background-position: center top;
+  
+  .session-time{
+    position: absolute;
+    left: 50%;
+    margin: 20px 0px 0 -30px;
+    color: #fff;
+    font-weight: bold;
+    background: $pink;
+  }
+}
+.article-wrapper{
+	background-color: $white;
+	border-radius: 12px;
+	padding: 25px 0px;
+	margin: 20px 0;
+	overflow: hidden;
 	display: inline-block;
-	width: 45%;
 	&:nth-child(odd){
 		float: right;
 	}
@@ -284,25 +320,14 @@ body.scheduler footer{
 		float: left;
 	}
 	
-	@media (max-width: 1000px) {
-		width: 100%;
-		&:nth-child(odd){
-		float: none;
-		}
-	
-		&:nth-child(even){
-			float: none;
-		}
+  
+	.article-content{
+  	width: 70%;
+  	float: left;
+  	@media(max-width: 495px){
+    	width: 100%;
+  	}
 	}
-}
-
-.article-wrapper{
-	background-color: $white;
-	border-radius: 12px;
-	padding: 25px 0px;
-	margin: 20px 0;
-	overflow: hidden;
-	
 	.check-area{
 		width: 64px;
 		height: 64px;
@@ -312,6 +337,11 @@ body.scheduler footer{
 		background-repeat: no-repeat;
 		background-position: center top;
 		cursor: pointer;
+		width: 20%;
+		@media(max-width: 495px){
+    	width: 100%;
+    	text-align: center;
+  	}
 		&:hover{
 			background-position-y: -64px;
 		}
@@ -356,7 +386,6 @@ body.scheduler footer{
 
 .article-wrapper.active{
 	background-color: $lightestPink;
-	
 	.check-area{
 		background-position-y: -64px;
 	}
@@ -368,6 +397,9 @@ body.scheduler footer{
 		&:hover{
 			color: $pink;
 		}
+	}
+	&:after, &:before{
+  	color: $lightestPink !important;
 	}
 }
 

@@ -9,23 +9,24 @@ title: Schedule —  RubyConf AU
       li class=('active' if day.active?(current_resource)) data-slide-id="#{day.shortname}"
         = day.name
 
-  - planner.days.each do |day|
-    .slide-frame class="#{day.shortname}"
-      h2 Wednesday 19th February @ Vibe Hotel North Sydney 9:00am - 5:00pm
-      - day.sessions.each do |session|
-        .session.clearfix
-          - session.sorted_talks.each do |talk|
-            .article-frame.col-md-5
-              .article-wrapper.time-line.col-md-12
-                  i.fa
-                  .article-content.col-md-9
-                    p.time
-                      = talk.session
-                    h3
-                      = link_to talk.title, talk
-                    p.by-line
-                      | by 
-                      = link_to talk.speaker, '/Mark-Bates'
-                  .check-area.col-md-3
-                    p
+- planner.days.each do |day|
+  .slide-frame class="#{day.shortname}"
+    h2 Wednesday 19th February @ Vibe Hotel North Sydney 9:00am - 5:00pm
+    - day.sessions.each do |session|
+      .session.clearfix
+        .session-time
+         = session.time
+        - session.sorted_talks.each do |talk|
+          .article-wrapper.time-line.col-sm-5.fa data-title="#{talk.title}"
+
+              .article-content
+                p.time
+                  = talk.session
+                h3
+                  = link_to talk.title, talk
+                p.by-line
+                  | by 
+                  = link_to talk.speaker, '/Mark-Bates'
+              .check-area
+                p
 
