@@ -20,23 +20,25 @@
             h2.title
               = current_resource.talk.title
             = current_resource.talk.body
-/      - page_articles.select{|article| article.data[:speaker] == $current_speaker && article.data[:type] == 'workshop'}.each do |article|
+      - if current_resource.workshop
         section.speaker-workshops
           .col-md-12.container
             li.fa.fa-wrench
             h2.title
-              =article.title
-            =article.body
+              = current_resource.workshop.title
+            = current_resource.workshop.body
             = link_to "Buy workshop ticket", "http://www.eventbrite.com.au/e/rubyconf-australia-2014-tickets-8449999175", :target => '_blank'
-/      section.speaker-video
-/        .col-md-12.container
-/          - if current_resource.data[:video]
-/            .col-md-5
-/              iframe width="560" height="315" src="#{current_resource.data[:video]}" frameborder="0"
-/            .col-md-7
-/              h3
-/                | Interview With
-/                =current_resource.title
-/          - else
-/            h3
-/              | Check back soon for the speaker's video interview.
+      section.speaker-video
+        .col-md-12.container
+          - if current_resource.video_link
+            .col-md-5
+              = image_tag current_resource.video_thumbnail
+            .col-md-7
+              h3
+                | Interview With 
+                = current_resource.name
+              p
+                = current_resource.video_summary
+          - else
+            h3
+              | Check back soon for the speaker's video interview.

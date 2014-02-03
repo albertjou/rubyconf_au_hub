@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/ninefold/middleman-conference_hub.git
-  revision: b299c6b7d0a4f6cce5582b0c96b7e4d160a91d4b
+  revision: de31ca66bee9b35e9fb26da945e8b5b31f97a8cc
   specs:
     middleman-conference_hub (0.1.0)
       middleman-core (~> 3.2.0)
