@@ -436,6 +436,24 @@ body.index footer{
 	}
 }
 
+.slide-frame.Wed{
+  .article-wrapper{
+    width: 100%;
+    max-width: 680px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    display: block;
+    float: none;
+    .article-content{
+      width: 70%;
+      
+    }
+    .check-area {
+      background-position: right top;
+    }
+  }
+}
 
 #day-two, #day-three{
 
