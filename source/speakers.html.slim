@@ -17,7 +17,7 @@ title: speakers
                   span
                     = link_to speaker.twitter, :target => "_blank", :class => "fa" do
                       i.fa.fa-twitter
-                - if speaker.data[:github] != nil
+                - if speaker.data[:github]
                   span
                     = link_to speaker.github, :target => "_blank", :class => "fa" do
                       i.fa.fa-github
@@ -30,17 +30,16 @@ title: speakers
                 = image_tag "speakers/#{speaker.image}"
               - else 
                 = image_tag "placeholder.png"
-  
-            .col-sm-12.talk-links
-  
-              = link_to speaker.talk do
-                i.fa.fa-comments
-                = speaker.talk.title
-      /      .col-sm-12
-      /        - page_articles.select {|article| article.data[:type] == 'workshop' && article.data[:speaker] == $current_title }.each do |article|
-      /          %a{:href => '#'}
-      /            %i.fa.fa-wrench 
-      /            = article.name
+            - if speaker.talk
+              .col-sm-12.talk-links
+                = link_to url_for(speaker, :anchor => "talk") do
+                  i.fa.fa-comments
+                  = speaker.talk.title
+            - if speaker.workshop
+              .col-sm-12
+                = link_to url_for(speaker, :anchor => "workshop") do
+                  i.fa.fa-wrench
+                  = speaker.workshop.title
           
       /        - if article.data[:video] != nil
       /          %span.video-link

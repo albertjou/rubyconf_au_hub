@@ -2,7 +2,7 @@
 type: workshop
 title: Building C Extensions in Ruby
 date: 2014-02-19
-day: wed
+day: Wednesday
 time: 9:00am to 10:00am
 tags: workshop
 speaker: André Medeiros
