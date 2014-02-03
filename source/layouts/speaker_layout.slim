@@ -14,14 +14,14 @@
           = yield
 
       - if current_resource.talk
-        section.speaker-talks
+        section.speaker-talks#talk
           .col-md-12.container
             li.fa.fa-comments
             h2.title
               = current_resource.talk.title
             = current_resource.talk.body
       - if current_resource.workshop
-        section.speaker-workshops
+        section.speaker-workshops#workshop
           .col-md-12.container
             li.fa.fa-wrench
             h2.title

@@ -23,10 +23,10 @@ title: Schedule —  RubyConf AU
                 p.time
                   = talk.session
                 h3
-                  = link_to talk.title, talk
+                  = link_to talk.title, url_for(talk.speaker, :anchor => "talk")
                 p.by-line
                   | by 
-                  = link_to talk.speaker, '/Mark-Bates'
+                  = link_to talk.speaker_name, talk.speaker
               .check-area
                 p
 
