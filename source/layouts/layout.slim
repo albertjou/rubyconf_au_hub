@@ -1,0 +1,16 @@
+doctype html
+html
+  head
+    meta charset="utf-8"
+    link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet"
+    script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"
+    title
+      = current_page.data.title || "Rubyconf Australia"
+    = stylesheet_link_tag "normalize", "application" 
+    = javascript_include_tag  "all" 
+    = partial 'header'
+  body class=page_classes
+    section#main-content.col-md-12
+      .container.col-md-12
+        = yield
+  = partial 'footer'
