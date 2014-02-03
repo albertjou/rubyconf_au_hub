@@ -8,7 +8,7 @@ activate :the_hub do |h|
   h.days = %w{ Wednesday Thursday Friday}
 
   h.sessions = {
-    :wednesday => [ '9:00AM'
+    :wednesday => [ 
   ],
   :thursday => [ '9:00am', '10:15am', '11:00am', '11:45am', '2:00pm', '2:40pm', '3:20pm', '4:15pm'
   ],

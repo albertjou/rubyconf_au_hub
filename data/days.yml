@@ -2,6 +2,7 @@ wednesday:
   location: Vibe Hotel North Sydney
   pretty_name: Wednesday 19th February
   button_name: Wed 19 Feb - Workshops
+  active: true
 thursday:
   location: Luna Park Crystal Palace
   pretty_name: Thursday 20th February

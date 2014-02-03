@@ -10,11 +10,21 @@ title: Schedule —  RubyConf AU
         = day.button_name
 
 - planner.days.each do |day|
-  .slide-frame.container class="#{day.shortname}"
+  .slide-frame.container class="#{[day.shortname, ('active' if day.active?(current_resource))].join(" ")}"
     h2
       = day.pretty_name
       |  @ 
       = day.location
+    - day.query.where(:type => "workshop").all.each do |talk|
+      .article-wrapper
+        .article-content.col-sm-10
+          h3
+            = link_to talk.title, url_for(talk.speaker, :anchor => "workshop")
+          p.by-line
+            | by
+            = link_to talk.speaker_name, talk.speaker
+          .check-area.col-sm-2
+
     - day.sessions.each do |session|
       .session.clearfix
         .session-time
