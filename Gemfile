@@ -8,6 +8,7 @@ gem "middleman-conference_hub", :github => "ninefold/middleman-conference_hub", 
 gem "middleman-livereload"
 gem "slim"
 gem "nokogiri"
+gem "rack-contrib"
 
 group :production do
   gem 'rails', :require => false
