@@ -216,12 +216,12 @@ nav#main{
 
 // SCHEDULER
 
-body.scheduler #main-content{
+body.index #main-content{
 	background: $pink;
 }
-body.scheduler nav#main a:after{color: $pink;}
+body.index nav#main a:after{color: $pink;}
 
-body.scheduler footer{
+body.index footer{
 	background-color: $white;
 	background-image: url('../images/harbour_purple.jpg');
 	background-repeat: no-repeat;
