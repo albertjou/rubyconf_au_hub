@@ -2,9 +2,18 @@
 $(document).ready(function() {
 
 	//Set active call for main nav
-	$(function() {
+	
+$(function() {
+  if(location.pathname.split("/")[1] == "")
+  {
+    $('nav ul li a.home').addClass('active');
+  } 
+  else
+  {
 	  $('nav ul li a[href^="/' + location.pathname.split("/")[1] + '"]').addClass('active');
-	});
+	 }
+});
+
 	
 	//Set active class to scheduler nav and sheduler hidden pages 
 	$(function() {
