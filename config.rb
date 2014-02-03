@@ -44,6 +44,11 @@ page "/feed.xml", layout: false
 ###
 # Page options, layouts, aliases and proxies
 ###
+#
+
+with_layout :speaker_layout do
+  page "/speakers/*"
+end
 
 # Per-page layout changes:
 #
