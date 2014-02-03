@@ -552,6 +552,8 @@ body.live-feed nav#main a:after{color: $green;}
 }
 
 .speaker-talks{
+  width: 100%;
+  background: $white;
 	margin: 45px auto;
 	.title{
 		text-transform: none;
