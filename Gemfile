@@ -9,6 +9,10 @@ gem "middleman-livereload"
 gem "slim"
 gem "nokogiri"
 
+group :production do
+  gem 'rails', :require => false
+end
+
 
 # For feed.xml.builder
 gem "builder", "~> 3.0"
