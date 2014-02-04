@@ -134,4 +134,27 @@ $(function() {
     window.location = $(this).find("option:selected").val();
   });
 	
+	if ($(window).width() <= 990)
+	{	
+		$('.ninefold_logo_container').insertAfter('.site-title');
+	}	
+	else if($(window).width() > 990)
+	{
+	  $('.ninefold_logo_container').insertBefore('.site-title');
+	}
+
+	
+	
+});
+
+
+$(window).resize(function(){
+	if ($(window).width() <= 990)
+	{	
+		$('.ninefold_logo_container').insertAfter('.site-title');
+	}	
+	else if($(window).width() > 990)
+	{
+	  $('.ninefold_logo_container').insertBefore('.site-title');
+	}
 });	

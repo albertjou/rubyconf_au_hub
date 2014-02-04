@@ -115,6 +115,12 @@ header{
 	font-size: 25px;
 	font-family: $omnes-reg;
 	padding-top: 58px;
+	@media(max-width: 990px){
+  	.ninefold_logo_container, .rubyconf_logo_container{
+    	width: 45%;
+    	display: inline-block;
+  	}
+	}
 	a{
   	&:hover{
     	text-decoration: none;
@@ -137,6 +143,9 @@ header{
 	}
 	h2{
 		font-size: 42px;
+		@media(max-width: 495px){
+  		font-size: 24px !important;
+		}
 		margin: 0;
 		font-family: $opensans-reg;
 		font-weight: 400;
@@ -155,11 +164,13 @@ header{
   @media(max-width:645px){
     
     padding-top: 20px !important;
+    padding-bottom: 35px !important;
     
     .site-title{
-      max-width: 285px;
-      text-align: left;
-      float: left;
+      max-width: 272px;
+      text-align: center;
+      margin: 15px auto 20px auto;
+
     }
     h1{
       font-size: 26px;
@@ -177,7 +188,7 @@ header{
     }
     
     .col-md-3{
-  		display: none;
+  		//display: none;
   	}
   	
 	}
@@ -305,7 +316,8 @@ body.index footer{
 		border-radius: 12px;
 		overflow: hidden;
 		padding: 0;
-		width: 100%;
+		width: 95%;
+		margin: 0 auto;
 		li{
 			cursor: pointer;
 			list-style: none;
@@ -314,6 +326,21 @@ body.index footer{
 			color: $white;
 			width: 33.33%;
 			text-align: center;
+			@media(max-width: 600px){
+  			width: 100%;
+  			&:first-child{
+  				border-radius: 12px 12px 0 0 !important;
+  				border-bottom: 1px solid $pink;
+  				border-right: none !important;
+        }
+        &:last-child{
+				border-radius: 0 0 12px 12px !important;
+				border-left: none;
+				border-top: 1px solid $pink;
+			}
+
+
+			}
 			&:hover{
 				background: $white;
 				color: $pink;
@@ -343,9 +370,7 @@ body.index footer{
     position: absolute;
     left: -17px;
     font-size: 60px;
-    		@media(max-width: 768px){
-  		display: none;
-		}
+    		
   } 
 }
 
@@ -356,9 +381,7 @@ body.index footer{
     position: absolute;
     right: -17px;
     font-size: 60px;
-    		@media(max-width: 768px){
-  		display: none;
-		}
+
   } 
 }
 
@@ -368,7 +391,9 @@ body.index footer{
   background-repeat: repeat-y;
   background-position: center top;
   @media(max-width: 768px){
-  		background: none;
+  		      .session-time{
+        margin: -10px 0px 0px -30px !important;
+      }
   }
   
   .session-time{
@@ -380,17 +405,51 @@ body.index footer{
     background: $pink;
   }
 }
+
+.slide-frame.Wed{
+  .article-wrapper{
+    width: 100%;
+    max-width: 680px;
+    margin: 20px auto;
+    position: relative;
+    overflow: hidden;
+    display: block;
+    float: none;
+    .article-content{
+      width: 70%;
+      
+    }
+
+  }
+}
+
 .article-wrapper{
+  width: 41.6666%;
 	background-color: $white;
 	border-radius: 12px;
 	padding: 25px 0px;
 	margin: 20px 0;
 	overflow: hidden;
 	display: inline-block;
-	    		@media(max-width: 768px){
-  		width: 100%;
-		}
-	&:nth-child(odd){
+	@media(max-width: 495px){
+	  padding: 10px !important;
+	}
+  @media(max-width: 768px){
+      width: 43.6666%;
+      a{
+        font-size: 14px;
+        line-height: 16px;
+      }
+      h3{
+        line-height: 16px;
+      }
+      .time{
+        display: none;
+      }
+      .by-line{font-size: 14px !important;}
+  }
+  
+  	&:nth-child(odd){
 		float: right;
 	}
 	
@@ -404,6 +463,8 @@ body.index footer{
   	float: left;
   	@media(max-width: 495px){
     	width: 100%;
+    	padding: 10px;
+    	
   	}
 	}
 	.check-area{
@@ -414,17 +475,20 @@ body.index footer{
 		float: right;
 		background: url(../images/check-sprite.png);
 		background-repeat: no-repeat;
-		background-position: center top;
+		background-position: right top;
 		cursor: pointer;
-		@media(max-width: 495px){
-    	width: 100%;
-    	text-align: center;
-  	}
 		&:hover{
 			background-position-y: -64px;
 		}
-	}
-	
+		@media(max-width: 600px){
+      
+      background-size: 42px;
+      height: 42px;
+      &:hover{
+			background-position-y: -42px;
+      }
+		}
+	}	
 	.time{
 		margin: 0;
 		padding: 0;
@@ -437,6 +501,8 @@ body.index footer{
 		&:hover{
 			color: $darkPink;
 		}
+
+
 	}
 	
 	.by-line{
@@ -463,10 +529,34 @@ body.index footer{
 	}
 }
 
+	.time-line{
+	  @media(max-width: 495px){
+
+        padding: 0px !important;
+      
+    }
+    @media(max-width: 495px){
+    .check-area{
+		  margin: 10px auto !important;
+    	width: 100% !important;
+    	text-align: center !important;
+    	background-position: center top;
+  	}
+  	.article-content{
+    	border-bottom: 1px solid $pink;
+      }
+  	
+  	}
+  	
+	}
+
 .article-wrapper.active{
 	background-color: $lightestPink;
 	.check-area{
 		background-position-y: -64px;
+		@media(max-width: 600px){
+			background-position-y: -42px;
+		}
 	}
 	
 	a{
@@ -501,24 +591,7 @@ body.index footer{
 	}
 }
 
-.slide-frame.Wed{
-  .article-wrapper{
-    width: 100%;
-    max-width: 680px;
-    margin: 20px auto;
-    position: relative;
-    overflow: hidden;
-    display: block;
-    float: none;
-    .article-content{
-      width: 70%;
-      
-    }
-    .check-area {
-      background-position: right top;
-    }
-  }
-}
+
 
 #day-two, #day-three{
 
@@ -550,6 +623,10 @@ body.index footer{
 		color: $white;
 		text-align: center;
 		padding: 10px 0;
+		text-transform: none;
+		@media(max-width: 495px){
+  		font-size: 24px !important;
+		}
 	}
 	h3{
 		font-size: 24px;
