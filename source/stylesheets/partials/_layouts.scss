@@ -220,6 +220,7 @@ nav#main{
 	 	height: 50px;
 	 	margin: 0 auto;
 	 	li{
+
 			list-style: none;
 			float: left;
 			line-height: 45px;
@@ -258,11 +259,43 @@ nav#main{
 	
 	@media(max-width:645px){
   	ul{
-    	display: none;
+    	//display: none;
+    	width: 95%;
+    	overflow: hidden;
+    	li{
+    		width: 100%;
+    		.fa{
+    			&:hover{
+    				display: none;
+    				content: none;
+    			}
+    			content: none;
+    		}
+    	
+    		a{
+    			width: 100%;
+    			display: block;
+    			margin-right: 0;
+    			&:after{
+    		content: none;
+    	}
+    		}
+    		a.active{
+    			&:after{
+    				content: "\f078";
+    				text-align: right;
+    				margin-top: -20px;
+    			}
+    		}
+
+    	}
   	}
-  	select{
-    	margin-top: -50px;
-  	}
+  
+  	
+
+  	// select{
+   	//  	margin-top: -50px;
+  	// }
 	}
 	
 }

@@ -3,17 +3,29 @@ $(document).ready(function() {
 
 	//Set active call for main nav
 	
-$(function() {
-  if(location.pathname.split("/")[1] == "")
-  {
-    $('nav ul li a.home').addClass('active');
-  } 
-  else
-  {
-	  $('nav ul li a[href^="/' + location.pathname.split("/")[1] + '"]').addClass('active');
-  }
-});
+	$(function() {
+	  if(location.pathname.split("/")[1] == "")
+	  {
+	    $('nav ul li a.home').addClass('active');
+	    originalNav = $('nav#main').html();
+	  } 
+	  else
+	  {
+		  $('nav ul li a[href^="/' + location.pathname.split("/")[1] + '"]').addClass('active');
+		  originalNav = $('nav#main').html();
+	  }
+	  //Responsive Nav
+		if ($(window).width() <= 645)
+		{	
+			$('nav#main ul li a.active').parent().prependTo('nav#main ul');
+			$('nav#main ul li a.active').removeAttr("href");
+		}
+		else if($(window).width() > 645)
+		{
+			$('nav#main ul').replaceWith(originalNav);
+		}
 
+	});
 	
 	//Set active class to scheduler nav and sheduler hidden pages 
 	$(function() {
@@ -112,27 +124,27 @@ $(function() {
   checkCookie();
   
   // Create the dropdown base
-  $("<select />").appendTo("nav");
+  // $("<select />").appendTo("nav");
   
-  // Create default option "Go to..."
-  $("<option />", {
-     "selected": "selected",
-     "value"   : "Menu",
-     "text"    : '' 
-  }).appendTo("nav select");
+  // // Create default option "Go to..."
+  // $("<option />", {
+  //    "selected": "selected",
+  //    "value"   : "Menu",
+  //    "text"    : '' 
+  // }).appendTo("nav select");
   
-  // Populate dropdown with menu items
-  $("nav a").each(function() {
-   var el = $(this);
-   $("<option />", {
-       "value"   : el.attr("href"),
-       "text"    : el.text()
-   }).appendTo("nav select");
-  });
+  // // Populate dropdown with menu items
+  // $("nav a").each(function() {
+  //  var el = $(this);
+  //  $("<option />", {
+  //      "value"   : el.attr("href"),
+  //      "text"    : el.text()
+  //  }).appendTo("nav select");
+  // });
 
-  $("nav select").change(function() {
-    window.location = $(this).find("option:selected").val();
-  });
+  // $("nav select").change(function() {
+  //   window.location = $(this).find("option:selected").val();
+  // });
 	
 	if ($(window).width() <= 990)
 	{	
@@ -140,7 +152,18 @@ $(function() {
 	}	
 	else if($(window).width() > 990)
 	{
-	  $('.ninefold_logo_container').insertBefore('.site-title');
+		$('.ninefold_logo_container').insertBefore('.site-title');
+	}
+
+	
+	
+	if ($(window).width() <= 645)
+	{	
+		$('nav#main ul li a.active').parent().prependTo('nav#main ul');
+	}
+	else if($(window).width() > 645)
+	{
+
 	}
 
 	
@@ -148,7 +171,10 @@ $(function() {
 });
 
 
+
 $(window).resize(function(){
+
+
 	if ($(window).width() <= 990)
 	{	
 		$('.ninefold_logo_container').insertAfter('.site-title');
@@ -157,4 +183,35 @@ $(window).resize(function(){
 	{
 	  $('.ninefold_logo_container').insertBefore('.site-title');
 	}
+
+	//Responsive Nav
+	if ($(window).width() <= 645)
+	{	
+		$('nav#main ul li a.active').parent().prependTo('nav#main ul');
+		$('nav#main ul li a.active').removeAttr("href");
+
+	}
+	else if($(window).width() > 645)
+	{
+		$('nav#main ul').replaceWith(originalNav);
+						
+	}
+	
+
+});	
+
+$(document).ready(function() {
+	$('nav#main ul li').click(function(){
+		if ($(window).width() <= 645){
+			if($('nav#main ul').height() == 50){
+				$('nav#main ul').animate({"height": "+150px"})
+
+
+			}
+			else{
+				$('nav#main ul').animate({"height": "50px"})
+
+			}
+		}
+	});
 });	
