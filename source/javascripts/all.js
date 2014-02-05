@@ -160,14 +160,28 @@ $(document).ready(function() {
 	if ($(window).width() <= 645)
 	{	
 		$('nav#main ul li a.active').parent().prependTo('nav#main ul');
+		$('nav#main ul li a.active').removeAttr("href");
 	}
 	else if($(window).width() > 645)
 	{
 
 	}
 
-	
-	
+	$('nav#main').click(function(){
+		if ($(window).width() <= 645){
+			if($('nav#main ul').height() == 50){
+				$('nav#main ul').animate({"height": "+150px"})
+
+
+			}
+			else{
+				$('nav#main ul').animate({"height": "50px"})
+
+			}
+		}
+	});
+
+
 });
 
 
@@ -198,20 +212,4 @@ $(window).resize(function(){
 	}
 	
 
-});	
-
-$(document).ready(function() {
-	$('nav#main ul li').click(function(){
-		if ($(window).width() <= 645){
-			if($('nav#main ul').height() == 50){
-				$('nav#main ul').animate({"height": "+150px"})
-
-
-			}
-			else{
-				$('nav#main ul').animate({"height": "50px"})
-
-			}
-		}
-	});
 });	

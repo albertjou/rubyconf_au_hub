@@ -258,6 +258,9 @@ nav#main{
 	}
 	
 	@media(max-width:645px){
+	nav#main{
+		padding-top: 0;
+	}	
   	ul{
     	//display: none;
     	width: 95%;
