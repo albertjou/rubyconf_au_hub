@@ -1,6 +1,12 @@
 //= require_tree .
 $(document).ready(function() {
 
+   document.createElement("'header'");
+   document.createElement("'nav'");
+   document.createElement("'article'");
+   document.createElement("'section'");
+   document.createElement("'footer'");
+
 	//Set active call for main nav
 	
 	$(function() {
