@@ -227,12 +227,14 @@ nav#main{
 			padding: 0 5%;
 			a{
 				color: $lightGray; 
+				font-family: $opensans-reg;
 				font-size: 1.5em;
 				position: relative;
 				&:after{
 					content: '\f0de';
+					font-family: fontawesome;
 					font-size: 34px;
-					top: 22px;
+					top: 25px;
 					right: 0;
 					left: 0;
 					text-align: center;
@@ -301,30 +303,6 @@ nav#main{
   	// }
 	}
 	
-}
-
-nav select { display: inline-block; }
-  
-nav select {
-  -webkit-appearance: button;
-  background: url(../images/hamburger.png);
-  width: 32px;
-  height: 32px;
-  background-size: 32px;
-  -webkit-padding-end: 20px;
-  -webkit-padding-start: 2px;
-  -webkit-user-select: none;
-  border: $black;
-  margin: 15px 25px 10px 0;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  z-index: 9999;
-  float: right;
-  -moz-border-radius: 0px;
-  -webkit-border-radius: 0px;
-  border-radius: 0px; /* future proofing */
-  -khtml-border-radius: 0px; /* for old Konqueror browsers */
 }
 
 // SCHEDULER
