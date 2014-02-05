@@ -1,14 +1,7 @@
 //= require_tree .
 $(document).ready(function() {
-
-   document.createElement("'header'");
-   document.createElement("'nav'");
-   document.createElement("'article'");
-   document.createElement("'section'");
-   document.createElement("'footer'");
-
-	//Set active call for main nav
 	
+	//Set active call for main nav
 	$(function() {
 	  if(location.pathname.split("/")[1] == "")
 	  {
@@ -167,12 +160,14 @@ $(document).ready(function() {
 	{	
 		$('nav#main ul li a.active').parent().prependTo('nav#main ul');
 		$('nav#main ul li a.active').removeAttr("href");
+		$('.speaker-box').each(function(){
+			$(this).find('.avatar-frame').insertBefore($(this).find('.article-header'));
+		});
 	}
 	else if($(window).width() > 645)
 	{
 
 	}
-
 	$('nav#main').click(function(){
 		if ($(window).width() <= 645){
 			if($('nav#main ul').height() == 50){
@@ -186,8 +181,6 @@ $(document).ready(function() {
 			}
 		}
 	});
-
-
 });
 
 
@@ -209,12 +202,13 @@ $(window).resize(function(){
 	{	
 		$('nav#main ul li a.active').parent().prependTo('nav#main ul');
 		$('nav#main ul li a.active').removeAttr("href");
-
+		$('.speaker-box').each(function(){
+			$(this).find('.avatar-frame').insertBefore($(this).find('.article-header'));
+		});
 	}
 	else if($(window).width() > 645)
 	{
-		$('nav#main ul').replaceWith(originalNav);
-						
+		$('nav#main ul').replaceWith(originalNav);			
 	}
 	
 
