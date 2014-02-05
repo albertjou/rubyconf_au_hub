@@ -728,6 +728,8 @@ body.speakers nav#main a:after{color: $blue;}
 			
 			@media (max-width: 768px) {
 				text-align: center;
+				font-size: 22px !important;
+				height: 22px;
 			}
 		}
 	}
