@@ -11,5 +11,4 @@ image: sam-saffron.png
 description: 
 ---
 
-Cofounder http://www.discourse.org  , hacker, rubiest, SQL fan, open source aficionado
-Sydney, Australia · samsaffron.com
+Sam is the Sydney based co-founder of Discourse. In a past life he was a developer at Stack Overflow. Sam has a deep passion for making fast web sites. He manages the rack-mini-profiler gem. He also created the flamegraph and message_bus gem, and contributed performance patches to Rails and other open source gems.
