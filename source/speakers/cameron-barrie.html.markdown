@@ -8,6 +8,13 @@ workshops:
 talks: What is it you really do?
 video: 
 image: cameron-barrie.jpg
-description: I run Bilue a Sydney based software consultancy of 5 delivering stuff for others. I also run GeekBreakfast Sydney on the 2nd Friday of each month. 
+description: 
 ---
 
+Cameron is the Managing Director and a Principle Mobile Consultant at Bilue, a Sydney based Software Consultancy specialising in mobile platforms. 
+
+He's passionate about product development. With a focus on strategy and a technical edge Cameron bring innovation and feasibility together to provide Bilue's clients with cutting edge products that exceed their customers expectations.
+
+Cameron manages a team of designers and developers, leveraging his extensive network to form product focused teams creating simply the best mobile experiences.
+
+He also runs GeekBreakfast Sydney on the 2nd Friday of each month. 
