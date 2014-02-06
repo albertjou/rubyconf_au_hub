@@ -115,6 +115,10 @@ header{
 	font-size: 25px;
 	font-family: $omnes-reg;
 	padding-top: 58px;
+
+  .rubyconf_logo_container{
+    padding-top:14px !important;
+  }
 	@media(max-width: 990px){
   	.ninefold_logo_container, .rubyconf_logo_container{
     	width: 45%;
