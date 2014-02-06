@@ -31,11 +31,13 @@
         .col-md-12.container
           - if current_resource.video_link
             .col-md-5
-              = image_tag current_resource.video_thumbnail
+              = link_to current_resource.video_link
+                = image_tag current_resource.video_thumbnail
             .col-md-7
-              h3
-                | Interview With 
-                = current_resource.name
+              = link_to current_resource.video_link
+                h3
+                  | Interview With 
+                  = current_resource.name
               p
                 = current_resource.video_summary
           - else
