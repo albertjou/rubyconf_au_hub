@@ -445,6 +445,9 @@ body.index footer{
 	margin: 20px 0;
 	overflow: hidden;
 	display: inline-block;
+  .by-line{
+    margin: 20px 0 0 0;
+  }
 	@media(max-width: 495px){
 	  padding: 20px 10px !important;
 	}
