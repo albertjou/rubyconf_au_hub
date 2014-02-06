@@ -1,14 +1,14 @@
 #The Hub: The Digital Content Hub for RubyConf AU
 
-This is the code which builds the [RubyConf Miami AU](http://rubyconfay.multifaceted.io). It's built using [middleman](http://middlemanapp.com) and is designed for easy contribution. If you're interested in how it works, check out the code which drives the extension.
+This is the code which builds the [RubyConf AU](http://rubyconfay.multifaceted.io). It's built using [middleman](http://middlemanapp.com) and is designed for easy contribution. If you're interested in how it works, check out the code which drives the extension.
 
 ## Installing
 
 It should be pretty simple to get this going:
 
 ```
-$ git clone https://github.com/ninefold/rubyconf_miami_hub
-$ cd rubyconf_miami_hub
+$ git clone https://github.com/ninefold/rubyconf_au_hub
+$ cd rubyconf_au_hub
 $ bundle install
 $ middleman server
 ```
