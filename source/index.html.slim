@@ -34,8 +34,6 @@ title: Schedule —  RubyConf AU
           .article-wrapper.time-line.col-sm-5.fa data-title="#{talk.title}"
 
               .article-content
-                p.time
-                  = talk.session
                 h3
                   = link_to talk.title, url_for(talk.speaker, :anchor => "talk")
                 p.by-line
