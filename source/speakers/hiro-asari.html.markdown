@@ -8,6 +8,7 @@ workshops:
 talks: State of JRuby 2014
 video: 
 image: hiro-asari.jpg
-description: I hack on @TravisCI and @JRuby. Profile shot courtesy of @j3.
+description:
 ---
 
+Hiro Asari is an open source developer, writing code mostly in Ruby (occasionally in Java, so you don't have to). His past contributions include JRuby, OpenShift, RubySpec, Rails, mysql2, and Refinery CMS.
