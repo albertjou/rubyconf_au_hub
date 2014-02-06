@@ -10,3 +10,4 @@ video:
 image: sasha-gerrand.jpg
 description: Programmer. Cyclist. Bon vivant.
 ---
+Hacker. Ruby Friend. Programmer at [Bigcommerce](https://www.bigcommerce.com).
