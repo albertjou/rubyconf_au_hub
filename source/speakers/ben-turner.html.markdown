@@ -7,7 +7,7 @@ linkedin:
 workshops:
 talks: Ansible—your First Step into Server Provisioning
 video: 
-image: zach-holman.jpg
+image: ben-turner.jpg
 description: Gamer, geek, drinker, runner, eater and so much more.
 ---
 
