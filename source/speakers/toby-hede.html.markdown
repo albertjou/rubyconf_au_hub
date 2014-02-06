@@ -11,9 +11,7 @@ image:
 description: I am a mild-mannered Software Engineer, Developer & Polyglot Programmer, based in Sydney, Australia.
 ---
 
-With nearly 15 years commercial software development experience, I have an extensive history building & leading teams to ship quality software, honed by a polyglot development background and years of experience spent in the trenches as a software engineer and team leader. I have experience across the software development life-cycle, and have worked for many years championing agile principles including XP, Scrum and Kanban. An accomplished and confident public speaker and evangelist, I am a regular speaker at meetups and conferences.
+Toby Hede is a mild-mannered Software Engineer, based in Sydney, Australia. By day he works as Technical Lead for Ninefold, shaving yaks with Ruby & Chef and Redis and a zillion other awesome things. By night he pretty much does almost but not quite the same thing, occasionally using Go.
 
-My hobbies include collecting programming languages and databases, playing the drums, cutting code and pondering the nature of existence.
-
-On Twitter: @tobyhede
+Toby's hobbies include collecting programming languages and databases, playing the drums, cutting code and pondering the nature of existence.
 
