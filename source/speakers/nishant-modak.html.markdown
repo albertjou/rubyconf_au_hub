@@ -10,3 +10,5 @@ video:
 image: nishant-modak.jpg
 description: Loves :- software, trekking, ideating, sipping tea, listening to beatles, reading and walking in the rain.
 ---
+
+Nishant is a co-founder at [Revealing Hour](http://revealinghour.in) and also runs the [Internet-of-Things Pune community](http://internetofthings-pune.blogspot.com).
