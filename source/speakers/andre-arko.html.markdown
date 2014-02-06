@@ -10,6 +10,6 @@ video_link: http://multifaceted.io/2013/rubyconf-13-preview-andre-arko/
 video_summary: André talked to Multifaceted about his talk before RubyConf in
                Miami last year. Check out the video for the low-down.
 image: andre-arko.jpg
-description: Ruby nerd, Bundler maintainer, web developer.
+description: André thinks Ruby is pretty cool. He designs and builds web applications at Cloud City Development by day, and works on Bundler and Rubygems by night… and also some days.
 ---
 
