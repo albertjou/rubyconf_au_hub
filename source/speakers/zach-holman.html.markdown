@@ -10,3 +10,5 @@ video:
 image: zach-holman.jpg
 description: door-to-door git repository salesman for github inc. also mashes his keyboard at @speakingio
 ---
+
+Zach joined GitHub in 2010 as one of their first engineering hires. Initially working on what would become GitHub Enterprise, he now hacks on new features and frequently gives talks about building products and growing startups. He also writes about public speaking on [speaking.io](http://speaking.io).
