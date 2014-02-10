@@ -6,7 +6,8 @@ github:
 linkedin: http://au.linkedin.com/in/cameronbarrie
 workshops:
 talks: What is it you really do?
-video: 
+video_link: http://multifaceted.io/2014/rubyconf-au-14-cameron-barrie/
+video_summary: Cameron Barrie chats with Andrew Harvey about his keynote, focusing on the right things and Lachlan Hardy's hair.
 image: cameron-barrie.jpg
 description: 
 ---
