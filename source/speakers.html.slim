@@ -26,6 +26,8 @@ title: speakers
                   - if speaker.data[:description]
                     = speaker.data[:description]
 
+
+
             
             .avatar-frame
               - if speaker.data[:image] != nil
@@ -38,6 +40,7 @@ title: speakers
                   i.fa.fa-bullhorn
                   = speaker.talk.title
               .col-md-12.event-date
+                // Will need to add date and time to gem
                 = pretty_date(speaker.talk.data[:date])
                 |  
                 = speaker.talk.data[:time]
@@ -58,5 +61,5 @@ title: speakers
                     span.fa-stack.fa-lg
                       i.fa.fa-circle.fa-stack-2x
                       i.fa.fa-video-camera.fa-stack-1x
-                    | Watch out interview with 
+                    | Watch our interview with 
                     = speaker.name
