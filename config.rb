@@ -84,6 +84,13 @@ end
 #   end
 # end
 
+helpers do
+  def pretty_date(date)
+    return "" unless date
+    date.strftime('%b %e %Y')
+  end
+end
+
 set :css_dir, 'stylesheets'
 
 set :js_dir, 'javascripts'

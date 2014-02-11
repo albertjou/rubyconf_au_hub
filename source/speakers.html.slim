@@ -23,7 +23,9 @@ title: speakers
                       i.fa.fa-github
               .col-sm-12
                 p.speaker-description
-                  = speaker.data[:description]
+                  - if speaker.data[:description]
+                    = speaker.data[:description]
+
             
             .avatar-frame
               - if speaker.data[:image] != nil
@@ -35,15 +37,26 @@ title: speakers
                 = link_to url_for(speaker, :anchor => "talk") do
                   i.fa.fa-bullhorn
                   = speaker.talk.title
+              .col-md-12.event-date
+                = pretty_date(speaker.talk.data[:date])
+                |  
+                = speaker.talk.data[:time]
+
             - if speaker.workshop
-              .col-sm-12
+              .col-sm-12.talk-links
                 = link_to url_for(speaker, :anchor => "workshop") do
                   i.fa.fa-wrench
                   = speaker.workshop.title
-          
-      /        - if article.data[:video] != nil
-      /          %span.video-link
-      /            %a{:href => '#'}
-      /              %i.fa.fa-video-camera
-      /              Watch our interview with 
-      /              = article.data[:name]
+              .col-md-12.event-date
+                = pretty_date(speaker.workshop.data[:date])
+                |  
+                = speaker.workshop.data[:time]
+            - if speaker.video_link
+              .col-md-12.video-link
+                = link_to speaker.video_link
+                  p
+                    span.fa-stack.fa-lg
+                      i.fa.fa-circle.fa-stack-2x
+                      i.fa.fa-video-camera.fa-stack-1x
+                    | Watch out interview with 
+                    = speaker.name

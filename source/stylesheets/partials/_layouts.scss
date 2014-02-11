@@ -673,7 +673,13 @@ body.speakers nav#main a:after{color: $blue;}
 	{
   	width: 100% !important;
 	}
-	a{
+	
+	.col-sm-12{
+		overflow: hidden;
+		display: block;
+	}
+	.article-header{
+		a{
 	 	color: $white;
 	 	display: block;
 	 	float: left;
@@ -685,18 +691,13 @@ body.speakers nav#main a:after{color: $blue;}
 	 	.fa{
 		 	color: $darkBlue;
 		 	font-size: 22px;
-		 	padding: 5px 5px 0 5px;
+		 	padding: 5px 10px 0 5px;
 		 	
 		 	&:hover{
 			 	color: $white;
 		 	}
 	 	}
 	}
-	.col-sm-12{
-		overflow: hidden;
-		display: block;
-	}
-	.article-header{
 		overflow: hidden;
 		padding: 0 0 0 0;
 		margin-bottom: 10px;
@@ -777,22 +778,75 @@ body.speakers nav#main a:after{color: $blue;}
 .talk-links{
   width: 100%;
   display: inline-block;
+  a{
+  	font-weight:bold;
+  	font-size: 18px;
+  }
+
+  	a{
+	 	color: $white;
+	 	display: block;
+	 	float: left;
+	 	
+	 	&:hover{
+		 	color: $darkBlue;
+	 	}
+	 	
+	 	.fa{
+		 	color: $darkBlue;
+		 	font-size: 22px;
+		 	padding: 5px 10px 0 5px;
+		 	
+		 	&:hover{
+			 	color: $white;
+		 	}
+	 	}
+	}
+}
+
+.event-date{
+	padding-left:54px;
+	font-weight: bold;
 }
 
 .video-link{
-	margin-top: 40px;
 	display: block;
 	overflow: hidden;
+		height: 65px;
+}
+
+.video-link p{
+	margin: 0;
 }
 
 .video-link .fa-video-camera{
-	color: $pink !important;
+	padding: 0;
+}
+
+.video-link{
+	.fa-stack{
+		.fa-circle{
+			color: $pink;
+		}
+
+	}
 }
 
 .video-link a{
+	font-weight: bold;
+	border-radius: 6px;
+	margin: 0;
 	font-size: 16px;
 	color: $white;
 	text-decoration: underline;
+	padding: 0 15px 0 0px;
+		&:hover{
+		color: $darkBlue;
+		.fa-video-camera{
+			color: $white;
+		}
+	}
+
 }
 
 /* Live Feed

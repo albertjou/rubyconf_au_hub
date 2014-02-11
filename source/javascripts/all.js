@@ -55,9 +55,19 @@ $(document).ready(function() {
 			}
 			else
 			{
+				// Get the parent wrapper that contains the two talks
+				// This will be used to toggle the active state of the two talks
+				var session = $(this).parent().parent();
+				
+				$(session).children().each(function(){
+					$(this).removeClass('active');
+				})
+
 				$(this).parent().addClass('active');	
 			}
 			isActive = false
+
+
 			
 			// Now we create/update the cookie to remember our selections
 			
@@ -68,7 +78,6 @@ $(document).ready(function() {
 			$('.article-wrapper.active').each(function(){
   			   activeTitles.push($(this).data('title'));
 			});
-        console.log(activeTitles);
         
       // Function for creating cookies
       
