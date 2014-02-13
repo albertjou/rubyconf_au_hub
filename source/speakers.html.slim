@@ -41,20 +41,12 @@ description: View the Ruby Conf AU 2014 speaker lineup, talk times, pre-conferen
                   i.fa.fa-bullhorn
                   = speaker.talk.title
               .col-md-12.event-date
-                // Will need to add date and time to gem
-                = pretty_date(speaker.talk.data[:date])
-                |  
-                = speaker.talk.data[:time]
-
+                = "#{speaker.talk.day} @ #{speaker.talk.session}"
             - if speaker.workshop
               .col-sm-12.talk-links
                 = link_to url_for(speaker, :anchor => "workshop") do
                   i.fa.fa-wrench
                   = speaker.workshop.title
-              .col-md-12.event-date
-                = pretty_date(speaker.workshop.data[:date])
-                |  
-                = speaker.workshop.data[:time]
             - if speaker.video_link
               .col-md-12.video-link
                 = link_to speaker.video_link
