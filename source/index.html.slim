@@ -16,6 +16,11 @@ description: View the workshop and conference schedules for Ruby Conf AU 2014, h
       = day.pretty_name
       |  @ 
       = day.location
+
+    - if day.name != "Wednesday"
+      .row
+        - rooms.each do |room|
+          h3.col-xs-6.text-center = room
     - day.query.where(:type => "workshop").all.each do |talk|
       .col-md-12
         .article-wrapper data-title="#{talk.title}"
