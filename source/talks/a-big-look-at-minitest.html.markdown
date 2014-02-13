@@ -4,7 +4,7 @@ title: A Big Look at MiniTest
 date: 2014-02-20
 day: Thursday
 session: 10:15am
-room: Room 1
+room: Ted Hopkins
 time: 10:15am to 11:00am
 tags: example, talk
 speaker: Mark Bates

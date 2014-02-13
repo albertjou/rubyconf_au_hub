@@ -4,7 +4,7 @@ title: Front End Choices
 date: 2014-02-20
 day: Thursday
 session: 2:00pm
-room: Room 2
+room: Crystal Ballroom
 time: 2:00pm to 2:40pm
 tags: talk
 speaker: Alex Coles

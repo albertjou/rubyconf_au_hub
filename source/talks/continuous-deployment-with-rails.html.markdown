@@ -4,7 +4,7 @@ title: Continuous Deployment with Rails
 date: 2014-02-21
 day: Friday
 session: 2:40pm
-room: Room 1
+room: Crystal Ballroom
 time: 2:40pm to 3:20pm
 tags: talk
 speaker: Keith Pitt & Mario Visic

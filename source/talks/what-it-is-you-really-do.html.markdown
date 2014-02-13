@@ -4,7 +4,7 @@ title: What it is you really do?
 date: 2014-02-20
 day: Thursday
 session: 9:00am
-room: Room 1
+room: Crystal Ballroom
 time: 9:00am to 10:00am
 tags: example, talk
 speaker: Cameron Barrie

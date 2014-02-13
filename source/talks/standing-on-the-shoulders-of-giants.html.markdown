@@ -4,7 +4,7 @@ title: Standing on the Shoulders of Giants
 date: 2014-02-21
 day: Friday
 session: 10:15am
-room: Room 2
+room: Crystal Ballroom
 time: 10.15am to 11:00am
 tags: talk
 speaker: Zachary Scott

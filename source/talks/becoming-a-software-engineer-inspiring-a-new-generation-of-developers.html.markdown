@@ -2,9 +2,9 @@
 type: talk
 title: "Becoming a Software Engineer: Insipring a New Generation of Developers"
 date: 2014-02-21
-day: Friday
+day: Thursday
 session: 2:40pm
-room: Room 2
+room: Ted Hopkins
 time: "2:40pm to 3:20pm"
 tags: talk
 speaker: Kinsey Ann Durham

@@ -4,7 +4,7 @@ title: Rack—A Framework to Roll Your Own
 date: 2014-02-21
 day: Friday
 session: 3:20pm
-room: Room 1
+room: Crystal Ballroom
 time: 3:20pm to 4:00pm 
 tags: talk
 speaker: Nishant Modak

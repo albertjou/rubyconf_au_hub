@@ -4,7 +4,7 @@ title: How I architected my big Rails app for success
 date: 2014-02-20
 day: Thursday
 session: 3:20pm
-room: Room 2
+room: Crystal Ballroom
 time: 3:20pm to 4:00pm
 tags: talk
 speaker: Benjamin Smith

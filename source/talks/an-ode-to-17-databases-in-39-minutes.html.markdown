@@ -5,7 +5,7 @@ date: 2014-02-20
 day: Thursday
 time: 2:00pm to 2:40pm
 session: 2:00pm
-room: Room 1
+room: Ted Hopkins
 tags: talk
 speaker: Toby Hede
 location: Luna Park Crystal Place

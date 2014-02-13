@@ -4,7 +4,7 @@ title: Modern Concurrency Practices in Ruby
 date: 2014-02-20
 day: Thursday
 session: 2:40pm
-room: Room 1
+room: Crystal Ballroom
 time: 2:40pm to 3:20pm
 tags: talk
 speaker: Arnab Deka

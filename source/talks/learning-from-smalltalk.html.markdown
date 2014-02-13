@@ -4,7 +4,7 @@ title: Learning from Smalltalk
 date: 2014-02-21
 day: Friday
 session: 3:20pm
-room: Room 2
+room: Ted Hopkins
 time: 3:20pm to 4:00pm
 tags: talk
 speaker: Sasha Gerrand
@@ -19,10 +19,10 @@ Smalltalk leaves a long shadow on the programming landscape and can be considere
 
 Topics include:
 
-Brief overview
-Design
-Expressions
-Literals
-Messages
-Patterns
-Reflection
+ - Brief overview
+ - Design
+ - Expressions
+ - Literals
+ - Messages
+ - Patterns
+ - Reflection

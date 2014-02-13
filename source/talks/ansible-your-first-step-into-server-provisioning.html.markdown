@@ -5,7 +5,7 @@ date: 2014-02-21
 day: Friday
 time: "10.15am to 11:00am"
 session: 10:15am
-room: Room 1
+room: Ted Hopkins
 tags: talk
 speaker: Ben Turner
 location: Luna Park Crystal Place

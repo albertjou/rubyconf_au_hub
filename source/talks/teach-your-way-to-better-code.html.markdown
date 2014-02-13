@@ -5,7 +5,7 @@ date: 2014-02-21
 day: Friday
 time: 11.00am to 11:45am
 session: 11:00am
-room: Room 1
+room: Crystal Ballroom
 tags: talk
 speaker: Felix Clack
 location: Luna Park Crystal Place

@@ -25,7 +25,7 @@ activate :the_hub do |h|
   }
 }
 
-  h.rooms = ['Room 1', 'Room 2']
+  h.rooms = ['Crystal Ballroom', 'Ted Hopkins']
 end
 
 activate :directory_indexes

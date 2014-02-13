@@ -2,9 +2,9 @@
 type: talk
 title: Tales of Interest
 date: 2014-02-20
-day: Thursday
+day: Friday
 session: 2:40pm
-room: Room 2
+room: Ted Hopkins
 time: 2:40pm to 3:20pm
 tags: talk
 speaker: Jon Rowe

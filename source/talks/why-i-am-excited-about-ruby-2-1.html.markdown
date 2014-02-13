@@ -4,7 +4,7 @@ title: Why I am excited about Ruby 2.1?
 date: 2014-02-20
 day: Thursday
 session: 3:20pm
-room: Room 1
+room: Ted Hopkins
 time: 3:20pm to 4:00pm
 tags: talk
 speaker: Sam Saffron

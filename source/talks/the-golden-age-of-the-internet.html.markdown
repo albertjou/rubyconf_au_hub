@@ -4,7 +4,7 @@ title: The Golden Age of the Internet
 date: 2014-02-20
 day: Thursday
 session: 4:15pm
-room: Room 1
+room: Crystal Ballroom
 time: 4:15pm–5:15pm
 tags: talk
 speaker: Pat Allan

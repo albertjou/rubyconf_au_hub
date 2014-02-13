@@ -4,7 +4,7 @@ title: Extreme Makeover- Rubygems Edition
 date: 2014-02-20
 day: Thursday
 session: 10:15am
-room: Room 2
+room: Crystal Ballroom
 time: 10:15am to 11:00am
 tags: talk
 speaker: André Arko

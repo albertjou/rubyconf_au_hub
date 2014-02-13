@@ -4,7 +4,7 @@ title: Using Ruby to Automate Your Life
 date: 2014-02-20
 day: Thursday
 session: 11:00am
-room: Room 2
+room: Ted Hopkins
 time: 11:00am to 11:45am
 tags: talk
 speaker: Seth Vargo

@@ -4,7 +4,7 @@ title: Hacking Sidekiq for Fun and Profit
 date: 2014-02-21
 day: Friday
 session: 11:45am
-room: Room 1
+room: Ted Hopkins
 time: 11:45am to 12:30pm
 tags: talk
 speaker: Darcy Laycock
