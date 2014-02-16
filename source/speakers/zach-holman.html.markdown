@@ -6,7 +6,8 @@ github: https://github.com/holman
 linkedin: 
 workshops:
 talks: How Github (no longer) works
-video: 
+video_link: http://multifaceted.io/2014/rubyconf-au-14-zach-holman/
+video_summary: Zach Holman chats with Andrew Harvey about his talk at RubyConf AU. Zach discusses his journey to becoming one of GitHub's most prolific speakers, scaling how GitHub works and being happy at work
 image: zach-holman.jpg
 description: door-to-door git repository salesman for github inc. also mashes his keyboard at @speakingio
 ---
