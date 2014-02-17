@@ -2,6 +2,7 @@
 type: talk
 title: "Rails Asset Pipeline: Defunct or Da Funk"
 speaker: Samuel Cochran
+room: Crystal Ballroom
 day: Thursday
 session: 2:00pm
 ---
