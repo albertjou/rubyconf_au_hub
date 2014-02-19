@@ -2,7 +2,7 @@
 type: talk
 title: Teach Your Way To Better Code
 date: 2014-02-21
-day: Friday
+day: Thursday
 time: 11.00am to 11:45am
 session: 11:00am
 room: Crystal Ballroom

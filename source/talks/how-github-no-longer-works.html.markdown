@@ -1,7 +1,7 @@
 ---
 type: talk
 date: 2014-02-20
-day: Thursday
+day: Friday
 session: 11:00am
 room: Crystal Ballroom
 title: How Github (no longer) works
