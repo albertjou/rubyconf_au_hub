@@ -6,7 +6,8 @@ github: https://github.com/freelancing-god
 linkedin: http://au.linkedin.com/in/patallan
 workshops:
 talks: The Golden Age of the Internet
-video: 
+video_link: http://youtu.be/XZLQPRDWDs4
+video_summary: We  have a fireside chat with Pat Allen about his RubyConf AU keynote. Pat talks with Andrew Harvey about community, the golden age of technology and how people chose Ruby and the effect of that on our community.
 image: pat-allan.jpg
 description: 
 ---

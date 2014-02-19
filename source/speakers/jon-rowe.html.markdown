@@ -6,7 +6,8 @@ github: https://github.com/JonRowe
 linkedin: 
 workshops:
 talks: Tales of Interest
-video: 
+video_link: http://www.youtube.com/watch?v=MYWrFiqwrPs
+video_summary: Jon Rowe sits down with Andrew Harvey to chat about his upcoming workshop and talk at RubyConf AU. He talks about testing, from cargo-culting to really getting it and open source war stories.
 image: jon-rowe.jpg
 description: Tinker. Sailor. Developer. Spy?
 ---
