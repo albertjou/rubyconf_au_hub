@@ -6,7 +6,8 @@ github:
 linkedin: http://www.linkedin.com/pub/kinsey-ann-durham/23/341/b03
 workshops:
 talks: Becoming a Software Engineer Insipring a New Generation of Developers
-video: 
+video_link: http://www.youtube.com/watch?v=vZqGYSuq0O0
+video_summary: Before RubyConf in Miami last year, Kinsey chatted with Andrew Harvey about her talk and her journey from advertising major to developer.
 image: kinsey-ann-durham.jpg
 description: 
 ---
