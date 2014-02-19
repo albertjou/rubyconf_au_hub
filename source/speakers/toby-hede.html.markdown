@@ -6,7 +6,8 @@ github: https://github.com/tobyhede
 linkedin: http://au.linkedin.com/in/tobyhede
 workshops:
 talks: An Ode to 17 Databases in 39 minutes
-video: 
+video_summary: Toby Hede chats with Andrew Harvey about his whirlwind tour through 17 databases which came from a lightning talk at last year's RubyConf. Toby talks about the wild west of databases, and the need for Rails developers to understand CAP theorem.
+video_link: http://multifaceted.io/2014/rubyconf-au-14-toby-hede/
 image: 
 description: 
 ---
