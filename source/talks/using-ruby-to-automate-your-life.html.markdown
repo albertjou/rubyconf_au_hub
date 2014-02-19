@@ -2,10 +2,9 @@
 type: talk
 title: Using Ruby to Automate Your Life
 date: 2014-02-20
-day: Thursday
-session: 11:00am
-room: Ted Hopkins
-time: 11:00am to 11:45am
+day: Friday
+session: 3:20pm
+room: Crystal Ballroom
 tags: talk
 speaker: Seth Vargo
 location: Luna Park Crystal Place

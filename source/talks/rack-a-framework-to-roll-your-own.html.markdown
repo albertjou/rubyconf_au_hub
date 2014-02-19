@@ -2,10 +2,9 @@
 type: talk
 title: Rack—A Framework to Roll Your Own
 date: 2014-02-21
-day: Friday
-session: 3:20pm
-room: Crystal Ballroom
-time: 3:20pm to 4:00pm 
+day: Thursday
+session: 11:00am
+room: Ted Hopkins
 tags: talk
 speaker: Nishant Modak
 location: Luna Park Crystal Place
