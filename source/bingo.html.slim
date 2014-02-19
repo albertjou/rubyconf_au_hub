@@ -1,0 +1,46 @@
+- content_for :javascript do
+  = stylesheet_link_tag "bingo.css"
+  = javascript_include_tag "handlebars-1.0.0.beta.6.js", "jquery.url.min.js",
+    "miso.ds.deps.ie.min.0.2.1.js", "buttons.js"
+  javascript:
+    function embedBox() {
+      var $embedbox = $("#embedbox");
+      var $oldopenbox = $openbox;
+      var height = "725";
+      if (typeof embed_size !== "undefined")
+      {
+          height = embed_size;
+      }
+      closebox();
+      $openbox = $('#embedlink img');
+      if($oldopenbox && $openbox.attr('src') == $oldopenbox.attr('src'))
+      {
+          $openbox = false;
+          return;
+      }
+      var embed_url = currentMapUrl();
+      $('#maplink').html(basemap_location);
+      $('#embedcode').html("&lt;iframe src=\""+embed_url+"\" height=\""+height+"\" width=\"600\" scrolling=\"no\" frameborder=\"0\"&gt;&lt;/iframe&gt;");
+      $embedbox.show();
+      openbox();
+    }
+    var mapdrawn = false;
+    var printable = false;
+    var basemap_location = "http://mysite.url/newcard.html";
+    var embedmap_location = "http://mysite.url/embed.html";
+    var embed_size = 785;
+
+#container
+  #map_body
+    #meta-container
+      #chart-container
+
+script type="text/x-handlebars-template" id="card-template"
+  |
+    <div class="card {{chip}}" id="card-{{row}}-{{col}}">
+      <div class="card-text">
+        {{text}}
+      </div>
+    </div>
+= javascript_include_tag "this-chart.js"
+

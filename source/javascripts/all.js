@@ -1,4 +1,3 @@
-//= require_tree .
 $(document).ready(function() {
 	
 	//Set active call for main nav
