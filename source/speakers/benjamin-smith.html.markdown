@@ -6,7 +6,8 @@ github: https://github.com/benjaminleesmith
 linkedin: 
 workshops:
 talks: How I architected my big Rails app for success
-video: 
+video_link: http://youtu.be/4jOiIWn38h4
+video_summary: Ben Smith chats with Andrew Harvey about his RubyConf AU talk. He talks about how his experience with rescue projects has taught him how to better architect large Rails applications from scratch.
 image: benjamin-smith.jpg
 description:
 ---
