@@ -3,8 +3,8 @@ type: talk
 title: State of JRuby 2014
 date: 2014-02-21
 day: Friday
-session: 2:00pm
-room: Ted Hopkins
+session: 11:45am
+room: Crystal Ballroom
 time: 2:00pm to 2:40pm
 tags: talk
 speaker: Hiro Asari

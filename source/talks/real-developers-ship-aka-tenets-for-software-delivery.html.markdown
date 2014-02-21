@@ -3,9 +3,8 @@ type: talk
 title: Real Developers Ship (a.k.a Tenets for Software Delivery)
 date: 2014-02-21
 day: Friday
-session: 11:45am
-room: Crystal Ballroom
-time: 11:45am to 12:30pm
+session: 2:00pm
+room: Ted Hopkins
 tags: talk
 speaker: Sebastian von Conrad
 location: Luna Park Crystal Place
